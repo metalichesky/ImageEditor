@@ -19,7 +19,6 @@ public:
     }
 
     void loadFromBitmap(Bitmap *newBitmap) {
-//        imageTexture.create(newBitmap->width, newBitmap->height);
         int pixelsCounter = 0;
         image.create(newBitmap->width, newBitmap->height, sf::Color::Black);
         for (int y = 0; y < newBitmap->height; y++) {

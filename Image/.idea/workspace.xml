@@ -11,7 +11,65 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06ff6885-d638-49c5-9efa-805f28168dbe" name="Default Changelist" comment="" />
+    <list default="true" id="06ff6885-d638-49c5-9efa-805f28168dbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FindOpenMP/ompver_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FindOpenMP/ompver_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Image.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Image.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Image.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Image.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Image.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Image.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Image.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SFMLApp.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ImageAnalyser" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ImageAnalyser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ImageAnalyser.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ImageAnalyser.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ImageView.h" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ImageView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/View.h" beforeDir="false" afterPath="$PROJECT_DIR$/ui/View.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/ImageBMP.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/util/ImageBMP.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/ImageBMP.h" beforeDir="false" afterPath="$PROJECT_DIR$/util/ImageBMP.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +79,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Yfpy1FLlXndwcHWx6SCza6T3ra" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,6 +91,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -79,6 +142,7 @@
       <workItem from="1583397050999" duration="1208000" />
       <workItem from="1583740045561" duration="37709000" />
       <workItem from="1583785650537" duration="6969000" />
+      <workItem from="1583901969765" duration="4890000" />
     </task>
     <servers />
   </component>
@@ -94,22 +158,22 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="466" y="129" width="426" height="483" key="FileChooserDialogImpl/0.0.1366.742@0.0.1366.742" timestamp="1583381772985" />
-    <state width="1324" height="39" key="GridCell.Tab.0.bottom" timestamp="1583820355885">
+    <state width="1324" height="107" key="GridCell.Tab.0.bottom" timestamp="1583907048811">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1324" height="39" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1583820355885" />
-    <state width="1324" height="39" key="GridCell.Tab.0.center" timestamp="1583820355884">
+    <state width="1324" height="107" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1583907048811" />
+    <state width="1324" height="107" key="GridCell.Tab.0.center" timestamp="1583907048810">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1324" height="39" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1583820355884" />
-    <state width="1324" height="39" key="GridCell.Tab.0.left" timestamp="1583820355884">
+    <state width="1324" height="107" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1583907048810" />
+    <state width="1324" height="107" key="GridCell.Tab.0.left" timestamp="1583907048810">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1324" height="39" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1583820355884" />
-    <state width="1324" height="39" key="GridCell.Tab.0.right" timestamp="1583820355885">
+    <state width="1324" height="107" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1583907048810" />
+    <state width="1324" height="107" key="GridCell.Tab.0.right" timestamp="1583907048810">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1324" height="39" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1583820355885" />
+    <state width="1324" height="107" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1583907048810" />
     <state width="1324" height="39" key="GridCell.Tab.1.bottom" timestamp="1583820355887">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -126,10 +190,10 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state width="1324" height="39" key="GridCell.Tab.1.right/0.0.1366.742@0.0.1366.742" timestamp="1583820355887" />
-    <state x="362" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1583785653163">
+    <state x="362" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1583901972802">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="362" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.742@0.0.1366.742" timestamp="1583785653163" />
+    <state x="362" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.742@0.0.1366.742" timestamp="1583901972802" />
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1583779448531">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -140,7 +204,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/ui/ImageView.h</url>
-          <line>109</line>
+          <line>108</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

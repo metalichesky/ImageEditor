@@ -62,22 +62,22 @@ CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- /home/dmitriy/University/Image/MainWindow.cpp
- /home/dmitriy/University/Image/MainWindow.h
- /home/dmitriy/University/Image/ui/Button.h
- /home/dmitriy/University/Image/ui/ImageView.h
- /home/dmitriy/University/Image/ui/UI.h
- /home/dmitriy/University/Image/ui/View.h
- /home/dmitriy/University/Image/ui/Window.h
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/ImageBMP.h
- /home/dmitriy/University/Image/util/Listeners.h
- /home/dmitriy/University/Image/util/effects/BlackWhiteEffect.h
- /home/dmitriy/University/Image/util/effects/Effect.h
- /home/dmitriy/University/Image/util/effects/FlipEffect.h
- /home/dmitriy/University/Image/util/effects/FrameEffect.h
- /home/dmitriy/University/Image/util/effects/RotateEffect.h
+ /home/dmitriy/University/ImageEditor/Image/MainWindow.cpp
+ /home/dmitriy/University/ImageEditor/Image/MainWindow.h
+ /home/dmitriy/University/ImageEditor/Image/ui/Button.h
+ /home/dmitriy/University/ImageEditor/Image/ui/ImageView.h
+ /home/dmitriy/University/ImageEditor/Image/ui/UI.h
+ /home/dmitriy/University/ImageEditor/Image/ui/View.h
+ /home/dmitriy/University/ImageEditor/Image/ui/Window.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
+ /home/dmitriy/University/ImageEditor/Image/util/Listeners.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -139,22 +139,22 @@ CMakeFiles/ImageAnalyser.dir/main.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- /home/dmitriy/University/Image/MainWindow.h
- /home/dmitriy/University/Image/main.cpp
- /home/dmitriy/University/Image/ui/Button.h
- /home/dmitriy/University/Image/ui/ImageView.h
- /home/dmitriy/University/Image/ui/UI.h
- /home/dmitriy/University/Image/ui/View.h
- /home/dmitriy/University/Image/ui/Window.h
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/ImageBMP.h
- /home/dmitriy/University/Image/util/Listeners.h
- /home/dmitriy/University/Image/util/effects/BlackWhiteEffect.h
- /home/dmitriy/University/Image/util/effects/Effect.h
- /home/dmitriy/University/Image/util/effects/FlipEffect.h
- /home/dmitriy/University/Image/util/effects/FrameEffect.h
- /home/dmitriy/University/Image/util/effects/RotateEffect.h
+ /home/dmitriy/University/ImageEditor/Image/MainWindow.h
+ /home/dmitriy/University/ImageEditor/Image/main.cpp
+ /home/dmitriy/University/ImageEditor/Image/ui/Button.h
+ /home/dmitriy/University/ImageEditor/Image/ui/ImageView.h
+ /home/dmitriy/University/ImageEditor/Image/ui/UI.h
+ /home/dmitriy/University/ImageEditor/Image/ui/View.h
+ /home/dmitriy/University/ImageEditor/Image/ui/Window.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
+ /home/dmitriy/University/ImageEditor/Image/util/Listeners.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.h
 CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -203,10 +203,10 @@ CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- /home/dmitriy/University/Image/ui/Button.cpp
- /home/dmitriy/University/Image/ui/Button.h
- /home/dmitriy/University/Image/ui/View.h
- /home/dmitriy/University/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/ui/Button.cpp
+ /home/dmitriy/University/ImageEditor/Image/ui/Button.h
+ /home/dmitriy/University/ImageEditor/Image/ui/View.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
 CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -251,12 +251,12 @@ CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- /home/dmitriy/University/Image/ui/ImageView.cpp
- /home/dmitriy/University/Image/ui/ImageView.h
- /home/dmitriy/University/Image/ui/View.h
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/ui/ImageView.cpp
+ /home/dmitriy/University/ImageEditor/Image/ui/ImageView.h
+ /home/dmitriy/University/ImageEditor/Image/ui/View.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -301,10 +301,10 @@ CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- /home/dmitriy/University/Image/ui/UI.cpp
- /home/dmitriy/University/Image/ui/UI.h
- /home/dmitriy/University/Image/ui/View.h
- /home/dmitriy/University/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/ui/UI.cpp
+ /home/dmitriy/University/ImageEditor/Image/ui/UI.h
+ /home/dmitriy/University/ImageEditor/Image/ui/View.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
 CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -349,9 +349,9 @@ CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- /home/dmitriy/University/Image/ui/View.cpp
- /home/dmitriy/University/Image/ui/View.h
- /home/dmitriy/University/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/ui/View.cpp
+ /home/dmitriy/University/ImageEditor/Image/ui/View.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
 CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -409,75 +409,75 @@ CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- /home/dmitriy/University/Image/ui/UI.h
- /home/dmitriy/University/Image/ui/View.h
- /home/dmitriy/University/Image/ui/Window.cpp
- /home/dmitriy/University/Image/ui/Window.h
- /home/dmitriy/University/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/ui/UI.h
+ /home/dmitriy/University/ImageEditor/Image/ui/View.h
+ /home/dmitriy/University/ImageEditor/Image/ui/Window.cpp
+ /home/dmitriy/University/ImageEditor/Image/ui/Window.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
 CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/University/Image/util/Bitmap.cpp
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/University/Image/util/Color.cpp
- /home/dmitriy/University/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
 CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/ImageBMP.cpp
- /home/dmitriy/University/Image/util/ImageBMP.h
- /home/dmitriy/University/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/effects/BlackWhiteEffect.cpp
- /home/dmitriy/University/Image/util/effects/BlackWhiteEffect.h
- /home/dmitriy/University/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/effects/Effect.cpp
- /home/dmitriy/University/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/effects/Effect.h
- /home/dmitriy/University/Image/util/effects/FlipEffect.cpp
- /home/dmitriy/University/Image/util/effects/FlipEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.h
 CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/effects/Effect.h
- /home/dmitriy/University/Image/util/effects/FrameEffect.cpp
- /home/dmitriy/University/Image/util/effects/FrameEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.h
 CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/University/Image/util/Bitmap.h
- /home/dmitriy/University/Image/util/Color.h
- /home/dmitriy/University/Image/util/effects/Effect.h
- /home/dmitriy/University/Image/util/effects/RotateEffect.cpp
- /home/dmitriy/University/Image/util/effects/RotateEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.h

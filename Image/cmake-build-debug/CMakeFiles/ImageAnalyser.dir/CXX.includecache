@@ -482,35 +482,35 @@ SFML/Config.hpp
 
 /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-/home/dmitriy/University/Image/MainWindow.cpp
+/home/dmitriy/University/ImageEditor/Image/MainWindow.cpp
 MainWindow.h
-/home/dmitriy/University/Image/MainWindow.h
+/home/dmitriy/University/ImageEditor/Image/MainWindow.h
 
-/home/dmitriy/University/Image/MainWindow.h
+/home/dmitriy/University/ImageEditor/Image/MainWindow.h
 ui/Window.h
-/home/dmitriy/University/Image/ui/Window.h
+/home/dmitriy/University/ImageEditor/Image/ui/Window.h
 ui/Button.h
-/home/dmitriy/University/Image/ui/Button.h
+/home/dmitriy/University/ImageEditor/Image/ui/Button.h
 ui/ImageView.h
-/home/dmitriy/University/Image/ui/ImageView.h
+/home/dmitriy/University/ImageEditor/Image/ui/ImageView.h
 util/ImageBMP.h
-/home/dmitriy/University/Image/util/ImageBMP.h
+/home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
 util/Listeners.h
-/home/dmitriy/University/Image/util/Listeners.h
+/home/dmitriy/University/ImageEditor/Image/util/Listeners.h
 ui/View.h
-/home/dmitriy/University/Image/ui/View.h
+/home/dmitriy/University/ImageEditor/Image/ui/View.h
 util/effects/BlackWhiteEffect.h
-/home/dmitriy/University/Image/util/effects/BlackWhiteEffect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.h
 util/effects/FlipEffect.h
-/home/dmitriy/University/Image/util/effects/FlipEffect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.h
 util/effects/RotateEffect.h
-/home/dmitriy/University/Image/util/effects/RotateEffect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.h
 util/effects/FrameEffect.h
-/home/dmitriy/University/Image/util/effects/FrameEffect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.h
 functional
 -
 
-/home/dmitriy/University/Image/main.cpp
+/home/dmitriy/University/ImageEditor/Image/main.cpp
 chrono
 -
 iostream
@@ -522,13 +522,13 @@ cmath
 list
 -
 util/ImageBMP.h
-/home/dmitriy/University/Image/util/ImageBMP.h
+/home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
 ui/Window.h
-/home/dmitriy/University/Image/ui/Window.h
+/home/dmitriy/University/ImageEditor/Image/ui/Window.h
 MainWindow.h
-/home/dmitriy/University/Image/MainWindow.h
+/home/dmitriy/University/ImageEditor/Image/MainWindow.h
 
-/home/dmitriy/University/Image/ui/Button.h
+/home/dmitriy/University/ImageEditor/Image/ui/Button.h
 string
 -
 SFML/Graphics/Font.hpp
@@ -538,23 +538,23 @@ SFML/Graphics/Text.hpp
 iostream
 -
 View.h
-/home/dmitriy/University/Image/ui/View.h
+/home/dmitriy/University/ImageEditor/Image/ui/View.h
 ../util/Color.h
-/home/dmitriy/University/Image/util/Color.h
+/home/dmitriy/University/ImageEditor/Image/util/Color.h
 
-/home/dmitriy/University/Image/ui/ImageView.h
+/home/dmitriy/University/ImageEditor/Image/ui/ImageView.h
 View.h
-/home/dmitriy/University/Image/ui/View.h
+/home/dmitriy/University/ImageEditor/Image/ui/View.h
 ../util/Bitmap.h
-/home/dmitriy/University/Image/util/Bitmap.h
+/home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
 
-/home/dmitriy/University/Image/ui/UI.h
+/home/dmitriy/University/ImageEditor/Image/ui/UI.h
 vector
 -
 View.h
-/home/dmitriy/University/Image/ui/View.h
+/home/dmitriy/University/ImageEditor/Image/ui/View.h
 
-/home/dmitriy/University/Image/ui/View.h
+/home/dmitriy/University/ImageEditor/Image/ui/View.h
 SFML/Graphics/Sprite.hpp
 -
 SFML/Graphics/Texture.hpp
@@ -566,9 +566,9 @@ functional
 SFML/Window/Event.hpp
 -
 ../util/Color.h
-/home/dmitriy/University/Image/util/Color.h
+/home/dmitriy/University/ImageEditor/Image/util/Color.h
 
-/home/dmitriy/University/Image/ui/Window.h
+/home/dmitriy/University/ImageEditor/Image/ui/Window.h
 iostream
 -
 SFML/Graphics/RenderWindow.hpp
@@ -578,23 +578,23 @@ SFML/System.hpp
 SFML/Window/Event.hpp
 -
 UI.h
-/home/dmitriy/University/Image/ui/UI.h
+/home/dmitriy/University/ImageEditor/Image/ui/UI.h
 
-/home/dmitriy/University/Image/util/Bitmap.h
+/home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
 cstdlib
 -
 Color.h
-/home/dmitriy/University/Image/util/Color.h
+/home/dmitriy/University/ImageEditor/Image/util/Color.h
 effects/Effect.h
-/home/dmitriy/University/Image/util/effects/Effect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 
-/home/dmitriy/University/Image/util/Color.h
+/home/dmitriy/University/ImageEditor/Image/util/Color.h
 cstdint
 -
 SFML/Graphics/Color.hpp
 -
 
-/home/dmitriy/University/Image/util/ImageBMP.h
+/home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
 iostream
 -
 fstream
@@ -606,33 +606,33 @@ sstream
 bitset
 -
 Bitmap.h
-/home/dmitriy/University/Image/util/Bitmap.h
+/home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
 
-/home/dmitriy/University/Image/util/Listeners.h
+/home/dmitriy/University/ImageEditor/Image/util/Listeners.h
 ../ui/View.h
-/home/dmitriy/University/Image/ui/View.h
+/home/dmitriy/University/ImageEditor/Image/ui/View.h
 functional
 -
 
-/home/dmitriy/University/Image/util/effects/BlackWhiteEffect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.h
 ../Bitmap.h
-/home/dmitriy/University/Image/util/Bitmap.h
+/home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
 Effect.h
-/home/dmitriy/University/Image/util/effects/Effect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 
-/home/dmitriy/University/Image/util/effects/Effect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 ../Bitmap.h
-/home/dmitriy/University/Image/util/Bitmap.h
+/home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
 
-/home/dmitriy/University/Image/util/effects/FlipEffect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.h
 Effect.h
-/home/dmitriy/University/Image/util/effects/Effect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 
-/home/dmitriy/University/Image/util/effects/FrameEffect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.h
 Effect.h
-/home/dmitriy/University/Image/util/effects/Effect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 
-/home/dmitriy/University/Image/util/effects/RotateEffect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.h
 Effect.h
-/home/dmitriy/University/Image/util/effects/Effect.h
+/home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
 

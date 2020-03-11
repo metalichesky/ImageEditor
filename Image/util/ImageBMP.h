@@ -16,6 +16,15 @@ using namespace std;
 
 class ImageBMP {
 public:
+
+    static const int16_t BF_TYPE;
+    int paletteColorsCount = 0;
+    Color *pixels = nullptr;
+    int width = 0;
+    int height = 0;
+
+
+
     void readFromFile(const string &filePath) {
         cout << "Reading BMP image file " + filePath << endl;
         fstream fileStream;
@@ -31,22 +40,26 @@ public:
                 fileStream.read((char *) &(colors[i]), sizeof(BMPImageHeader));
             }
         }
-        pixelsCount = imageHeader.width * imageHeader.height;
+        width = imageHeader.width;
+        height = imageHeader.height;
 
         read24BitsImage(&fileStream);
 
         fileStream.close();
         printFileHeader();
-        printMapInfo();
+        printImageHeader();
         printPaletteColors();
     }
 
     void writeToFile(const string &filePath) {
         cout << "Writing BMP image file " + filePath << endl;
         fstream fileStream;
-
         fileStream.open(filePath, fstream::out | fstream::binary);
 
+        write24BitsImage(&fileStream);
+
+        printFileHeader();
+        printImageHeader();
         fileStream.close();
     }
 
@@ -60,7 +73,7 @@ public:
         cout << "Offset: " << (int) fileHeader.bfOffsetBits << endl;
     }
 
-    void printMapInfo() {
+    void printImageHeader() {
         cout << "--- BMP map info ---" << endl;
         cout << "InfoHeader size: " << imageHeader.size << endl;
         cout << "Image width: " << imageHeader.width << endl;
@@ -86,11 +99,21 @@ public:
         auto *bitmap = new Bitmap(imageHeader.width, imageHeader.height);
         for (int y = 0; y < imageHeader.height; y++) {
             for (int x = 0; x < imageHeader.width; x++) {
-                int idx = (imageHeader.height - y - 1) * imageHeader.width + x;
+                int idx = y * imageHeader.width + x;
                 bitmap->setPixel(x, y, pixels[idx]);
             }
         }
         return bitmap;
+    }
+
+    void fromBitmap(Bitmap *bitmap) {
+        width = bitmap->width;
+        height = bitmap->height;
+        int pixelsCount = width * height;
+        pixels = new Color[pixelsCount];
+        for (int i = 0; i < pixelsCount; i++) {
+            pixels[i] = bitmap->getPixel(i)->copy();
+        }
     }
 
     ~ImageBMP(){
@@ -106,13 +129,11 @@ public:
         }
         pixels = nullptr;
         colors = nullptr;
-        pixelsCount = 0;
+        width = 0;
+        height = 0;
         paletteColorsCount = 0;
     }
 
-    int paletteColorsCount = 0;
-    Color *pixels = nullptr;
-    int pixelsCount = 0;
 
 private:
 
@@ -125,23 +146,71 @@ private:
     }
 
     void read24BitsImage(fstream *fileStream) {
-        pixels = new Color[pixelsCount];
+        pixels = new Color[width*height];
         int additionalBytesToRead = imageHeader.width % 4;
         int8_t byte;
         fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
 
-        int pixelsCounter = 0;
+        int idx = 0;
         BMP24Color color;
-        for (int i = 0; i < imageHeader.height; i++) {
-            for (int j = 0; j < imageHeader.width; j++) {
+        for (int i = height - 1; i >= 0; i--) {
+            for (int j = 0; j < width; j++) {
+                idx = i * width + j;
                 fileStream->read((char *) &color, sizeof(BMP24Color));
-                pixels[pixelsCounter].r = color.red;
-                pixels[pixelsCounter].g = color.green;
-                pixels[pixelsCounter].b = color.blue;
-                pixelsCounter++;
+                pixels[idx].r = color.red;
+                pixels[idx].g = color.green;
+                pixels[idx].b = color.blue;
             }
             for (int k = 0; k < additionalBytesToRead; k++) {
                 fileStream->read((char *) &byte, sizeof(byte));
+            }
+        }
+    }
+
+    void write24BitsImage(fstream *fileStream) {
+        int additionalBytesToWrite = width % 4;
+        int pixelsCount = width*height;
+        fileHeader.bfType = BF_TYPE;
+        fileHeader.bfSize = sizeof(fileHeader)
+                + sizeof(imageHeader)
+                + sizeof(BMPPaletteItem) * paletteColorsCount
+                + sizeof(BMP24Color) * pixelsCount
+                + additionalBytesToWrite * height;
+        fileHeader.bfOffsetBits = sizeof(fileHeader)
+                + sizeof(imageHeader)
+                + sizeof(BMPPaletteItem) * paletteColorsCount;
+        fileHeader.bfReserved1 = 0;
+        fileHeader.bfReserved2 = 0;
+        imageHeader.size = sizeof(BMPImageHeader);
+        imageHeader.width = width;
+        imageHeader.height = height;
+        imageHeader.planesCount = 1;
+        imageHeader.bitsPerPixel = 24;
+        imageHeader.compressionType = 0;
+        imageHeader.imageSize = 0;
+        imageHeader.xPixelsPerMeter = 2048;
+        imageHeader.yPixelsPerMeter = 2048;
+        imageHeader.colorsCount = paletteColorsCount;
+        imageHeader.colorsImportantCount = paletteColorsCount;
+
+        fileStream->write((char *) &fileHeader, sizeof(BMPFileHeader));
+        fileStream->write((char *) &imageHeader, sizeof(BMPImageHeader));
+
+        fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
+
+        int idx = 0;
+        int8_t byte = 0;
+        BMP24Color color;
+        for (int i = height - 1; i >= 0; i--) {
+            for (int j = 0; j < width; j++) {
+                idx = i * width + j;
+                color.red = pixels[idx].r;
+                color.green = pixels[idx].g;
+                color.blue = pixels[idx].b;
+                fileStream->write((char *) &color, sizeof(BMP24Color));
+            }
+            for (int k = 0; k < additionalBytesToWrite; k++) {
+                fileStream->write((char *) &byte, sizeof(byte));
             }
         }
     }

@@ -1,3 +1,3 @@
-/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles/ImageAnalyser.dir
-/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles/ImageAnalyser.dir
+/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles/edit_cache.dir

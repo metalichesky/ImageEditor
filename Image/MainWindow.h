@@ -32,6 +32,7 @@ public:
     Button* rotateLeftButton = new Button();
     Button* addFrameButton = new Button();
     Button* cutFrameButton = new Button();
+    Button* saveImageButton = new Button();
 
     MainWindow(): Window(){}
 
@@ -47,7 +48,7 @@ public:
         imageView->loadFromBitmap(currentImageBitmap);
         ui.views.push_back(imageView);
 
-        auto buttonsColor = sf::Color(100,100,100);
+        auto buttonsColor = sf::Color(100,100,100, 100);
         auto buttonsTextColor = sf::Color(0,0,0);
 
         blackWhiteButton->setSize(150, 50);
@@ -72,7 +73,6 @@ public:
         flipVerticalButton->setTextStyle(sf::Text::Style::Bold);
         flipVerticalButton->setTextSize(18);
         flipVerticalButton->setOnClickListener([this](View *v, sf::Event event) {
-            cout << "flipVerticalButton" << endl;
             FlipEffect(Orientation::VERTICAL).applyTo(currentImageBitmap);
             imageView->loadFromBitmap(currentImageBitmap);
         });
@@ -86,7 +86,6 @@ public:
         flipHorizontalButton->setTextStyle(sf::Text::Style::Bold);
         flipHorizontalButton->setTextSize(18);
         flipHorizontalButton->setOnClickListener([this](View *v, sf::Event event) {
-            cout << "flipHorizontalButton" << endl;
             FlipEffect(Orientation::HORIZONTAL).applyTo(currentImageBitmap);
             imageView->loadFromBitmap(currentImageBitmap);
         });
@@ -144,6 +143,18 @@ public:
         });
         ui.views.push_back(cutFrameButton);
 
+        saveImageButton->setSize(150, 50);
+        saveImageButton->setPosition(0, 550);
+        saveImageButton->setText("Save Image");
+        saveImageButton->setTextColor(buttonsTextColor);
+        saveImageButton->setBackgroundColor(buttonsColor);
+        saveImageButton->setTextStyle(sf::Text::Style::Bold);
+        saveImageButton->setTextSize(18);
+        saveImageButton->setOnClickListener([this](View *v, sf::Event event) {
+            saveImage();
+        });
+        ui.views.push_back(saveImageButton);
+
         buttonZoomIn->setSize(100, 100);
         buttonZoomIn->setPosition(700, 0);
         buttonZoomIn->setText("Zoom +");
@@ -152,7 +163,6 @@ public:
         buttonZoomIn->setTextStyle(sf::Text::Style::Bold);
         buttonZoomIn->setTextSize(18);
         buttonZoomIn->setOnClickListener([this](View *v, sf::Event event) {
-            cout << "Lambda callback" << event.text.unicode <<  "\n";
             auto currentScale = imageView->getImageScale();
             currentScale.x += imageScaleFactor;
             currentScale.y += imageScaleFactor;
@@ -168,7 +178,6 @@ public:
         buttonZoomOut->setTextStyle(sf::Text::Style::Bold);
         buttonZoomOut->setTextSize(18);
         buttonZoomOut->setOnClickListener([this](View *v, sf::Event event) {
-            cout << "Lambda callback" << event.text.unicode <<  "\n";
             auto currentScale = imageView->getImageScale();
             currentScale.x -= imageScaleFactor;
             currentScale.y -= imageScaleFactor;
@@ -178,10 +187,18 @@ public:
     }
 
     void loadImage() {
-        string filePath = "/home/dmitriy/University/Image/images/example.bmp";
+        string filePath = "/home/dmitriy/University/ImageEditor/Image/images/example.bmp";
         ImageBMP image;
         image.readFromFile(filePath);
         currentImageBitmap = image.toBitmap();
+        image.clear();
+    }
+
+    void saveImage() {
+        string filePath = "/home/dmitriy/University/ImageEditor/Image/images/result.bmp";
+        ImageBMP image;
+        image.fromBitmap(currentImageBitmap);
+        image.writeToFile(filePath);
         image.clear();
     }
 

@@ -43,10 +43,10 @@ RM = /home/dmitriy/Programs/clion-2019.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dmitriy/University/Image
+CMAKE_SOURCE_DIR = /home/dmitriy/University/ImageEditor/Image
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dmitriy/University/Image/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dmitriy/University/ImageEditor/Image/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ImageAnalyser.dir/depend.make
@@ -59,198 +59,198 @@ include CMakeFiles/ImageAnalyser.dir/flags.make
 
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ImageAnalyser.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/main.cpp.o -c /home/dmitriy/University/Image/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ImageAnalyser.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/main.cpp.o -c /home/dmitriy/University/ImageEditor/Image/main.cpp
 
 CMakeFiles/ImageAnalyser.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/main.cpp > CMakeFiles/ImageAnalyser.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/main.cpp > CMakeFiles/ImageAnalyser.dir/main.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/main.cpp -o CMakeFiles/ImageAnalyser.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/main.cpp -o CMakeFiles/ImageAnalyser.dir/main.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o: ../util/ImageBMP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o -c /home/dmitriy/University/Image/util/ImageBMP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.cpp
 
 CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/util/ImageBMP.cpp > CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.cpp > CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/util/ImageBMP.cpp -o CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.cpp -o CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o: ../util/Bitmap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o -c /home/dmitriy/University/Image/util/Bitmap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/Bitmap.cpp
 
 CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/util/Bitmap.cpp > CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/Bitmap.cpp > CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/util/Bitmap.cpp -o CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/Bitmap.cpp -o CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o: ../util/Color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o -c /home/dmitriy/University/Image/util/Color.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/Color.cpp
 
 CMakeFiles/ImageAnalyser.dir/util/Color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/Color.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/util/Color.cpp > CMakeFiles/ImageAnalyser.dir/util/Color.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/Color.cpp > CMakeFiles/ImageAnalyser.dir/util/Color.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/util/Color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/Color.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/util/Color.cpp -o CMakeFiles/ImageAnalyser.dir/util/Color.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/Color.cpp -o CMakeFiles/ImageAnalyser.dir/util/Color.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o: ../ui/UI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o -c /home/dmitriy/University/Image/ui/UI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o -c /home/dmitriy/University/ImageEditor/Image/ui/UI.cpp
 
 CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/ui/UI.cpp > CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/ui/UI.cpp > CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/ui/UI.cpp -o CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/ui/UI.cpp -o CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o: ../ui/Button.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o -c /home/dmitriy/University/Image/ui/Button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o -c /home/dmitriy/University/ImageEditor/Image/ui/Button.cpp
 
 CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/ui/Button.cpp > CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/ui/Button.cpp > CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/ui/Button.cpp -o CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/ui/Button.cpp -o CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o: ../ui/View.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o -c /home/dmitriy/University/Image/ui/View.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o -c /home/dmitriy/University/ImageEditor/Image/ui/View.cpp
 
 CMakeFiles/ImageAnalyser.dir/ui/View.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/ui/View.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/ui/View.cpp > CMakeFiles/ImageAnalyser.dir/ui/View.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/ui/View.cpp > CMakeFiles/ImageAnalyser.dir/ui/View.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/ui/View.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/ui/View.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/ui/View.cpp -o CMakeFiles/ImageAnalyser.dir/ui/View.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/ui/View.cpp -o CMakeFiles/ImageAnalyser.dir/ui/View.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o: ../ui/Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o -c /home/dmitriy/University/Image/ui/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o -c /home/dmitriy/University/ImageEditor/Image/ui/Window.cpp
 
 CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/ui/Window.cpp > CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/ui/Window.cpp > CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/ui/Window.cpp -o CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/ui/Window.cpp -o CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../MainWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o -c /home/dmitriy/University/Image/MainWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o -c /home/dmitriy/University/ImageEditor/Image/MainWindow.cpp
 
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/MainWindow.cpp > CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/MainWindow.cpp > CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/MainWindow.cpp -o CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/MainWindow.cpp -o CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o: ../ui/ImageView.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o -c /home/dmitriy/University/Image/ui/ImageView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o -c /home/dmitriy/University/ImageEditor/Image/ui/ImageView.cpp
 
 CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/ui/ImageView.cpp > CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/ui/ImageView.cpp > CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/ui/ImageView.cpp -o CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/ui/ImageView.cpp -o CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o: ../util/effects/Effect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o -c /home/dmitriy/University/Image/util/effects/Effect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.cpp
 
 CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/util/effects/Effect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/util/effects/Effect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o: ../util/effects/BlackWhiteEffect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o -c /home/dmitriy/University/Image/util/effects/BlackWhiteEffect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.cpp
 
 CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/util/effects/BlackWhiteEffect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/util/effects/BlackWhiteEffect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o: ../util/effects/FlipEffect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o -c /home/dmitriy/University/Image/util/effects/FlipEffect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.cpp
 
 CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/util/effects/FlipEffect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/util/effects/FlipEffect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o: ../util/effects/RotateEffect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o -c /home/dmitriy/University/Image/util/effects/RotateEffect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.cpp
 
 CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/util/effects/RotateEffect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/util/effects/RotateEffect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.s
 
 CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
 CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o: ../util/effects/FrameEffect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o -c /home/dmitriy/University/Image/util/effects/FrameEffect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.cpp
 
 CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/Image/util/effects/FrameEffect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.cpp > CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.i
 
 CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/Image/util/effects/FrameEffect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.cpp -o CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.s
 
 # Object files for target ImageAnalyser
 ImageAnalyser_OBJECTS = \
@@ -293,7 +293,7 @@ ImageAnalyser: /home/dmitriy/Libs/SFML-2.5.1/lib/libsfml-graphics.so.2.5.1
 ImageAnalyser: /home/dmitriy/Libs/SFML-2.5.1/lib/libsfml-window.so.2.5.1
 ImageAnalyser: /home/dmitriy/Libs/SFML-2.5.1/lib/libsfml-system.so.2.5.1
 ImageAnalyser: CMakeFiles/ImageAnalyser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dmitriy/University/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable ImageAnalyser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable ImageAnalyser"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ImageAnalyser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -306,6 +306,6 @@ CMakeFiles/ImageAnalyser.dir/clean:
 .PHONY : CMakeFiles/ImageAnalyser.dir/clean
 
 CMakeFiles/ImageAnalyser.dir/depend:
-	cd /home/dmitriy/University/Image/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dmitriy/University/Image /home/dmitriy/University/Image /home/dmitriy/University/Image/cmake-build-debug /home/dmitriy/University/Image/cmake-build-debug /home/dmitriy/University/Image/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dmitriy/University/ImageEditor/Image/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dmitriy/University/ImageEditor/Image /home/dmitriy/University/ImageEditor/Image /home/dmitriy/University/ImageEditor/Image/cmake-build-debug /home/dmitriy/University/ImageEditor/Image/cmake-build-debug /home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles/ImageAnalyser.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ImageAnalyser.dir/depend
 

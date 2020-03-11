@@ -44,6 +44,13 @@ public:
 
     void setBackgroundColor(sf::Color color) {
         backgroundColor = color;
+        backgroundSprite = sf::Sprite();
+        updateBackground();
+    }
+
+    void setBackgroundDrawable(sf::Image *image) {
+        backgroundDrawable = image;
+        backgroundSprite = sf::Sprite();
         updateBackground();
     }
 
@@ -81,14 +88,23 @@ protected:
     sf::Vector2f position = sf::Vector2f(0.0f, 0.0f);
     sf::Vector2f size = sf::Vector2f(0.0f, 0.0f);
     sf::Color backgroundColor = sf::Color::White;
+    sf::Image *backgroundDrawable = nullptr;
     sf::Sprite backgroundSprite = sf::Sprite();
 
     void updateBackground() {
-        sf::Image backgroundImage;
-        backgroundImage.create(size.x, size.y, backgroundColor);
-        sf::Texture backgroundTexture;
-        backgroundTexture.loadFromImage(backgroundImage);
-        backgroundSprite.setTexture(backgroundTexture);
+        auto *backgroundTexture = new sf::Texture();
+        if (backgroundDrawable == nullptr) {
+            sf::Image image;
+            image.create(size.x, size.y, backgroundColor);
+            backgroundTexture->loadFromImage(image);
+        } else {
+            backgroundTexture->loadFromImage(*backgroundDrawable);
+            auto textureSize = backgroundTexture->getSize();
+            float scaleX = size.x / textureSize.x;
+            float scaleY = size.y / textureSize.y;
+            backgroundSprite.setScale(scaleX, scaleY);
+        }
+        backgroundSprite.setTexture(*backgroundTexture);
         backgroundSprite.setPosition(position.x, position.y);
     }
 };

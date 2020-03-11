@@ -6,5 +6,5 @@ CXX_FLAGS =  -fopenmp -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dmitriy/University/Image/SFML_INCLUDE_DIR -isystem /home/dmitriy/Libs/SFML-2.5.1/include 
+CXX_INCLUDES = -I/home/dmitriy/University/ImageEditor/Image/SFML_INCLUDE_DIR -isystem /home/dmitriy/Libs/SFML-2.5.1/include 
 
