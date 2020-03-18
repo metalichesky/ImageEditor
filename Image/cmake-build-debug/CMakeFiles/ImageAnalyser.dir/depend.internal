@@ -65,6 +65,7 @@ CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o
  /home/dmitriy/University/ImageEditor/Image/MainWindow.cpp
  /home/dmitriy/University/ImageEditor/Image/MainWindow.h
  /home/dmitriy/University/ImageEditor/Image/ui/Button.h
+ /home/dmitriy/University/ImageEditor/Image/ui/CheckBox.h
  /home/dmitriy/University/ImageEditor/Image/ui/ImageView.h
  /home/dmitriy/University/ImageEditor/Image/ui/UI.h
  /home/dmitriy/University/ImageEditor/Image/ui/View.h
@@ -73,11 +74,23 @@ CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
  /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
  /home/dmitriy/University/ImageEditor/Image/util/Listeners.h
+ /home/dmitriy/University/ImageEditor/Image/util/Math.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/LogoEffect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/ScaleEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -142,6 +155,7 @@ CMakeFiles/ImageAnalyser.dir/main.cpp.o
  /home/dmitriy/University/ImageEditor/Image/MainWindow.h
  /home/dmitriy/University/ImageEditor/Image/main.cpp
  /home/dmitriy/University/ImageEditor/Image/ui/Button.h
+ /home/dmitriy/University/ImageEditor/Image/ui/CheckBox.h
  /home/dmitriy/University/ImageEditor/Image/ui/ImageView.h
  /home/dmitriy/University/ImageEditor/Image/ui/UI.h
  /home/dmitriy/University/ImageEditor/Image/ui/View.h
@@ -150,11 +164,23 @@ CMakeFiles/ImageAnalyser.dir/main.cpp.o
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
  /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
  /home/dmitriy/University/ImageEditor/Image/util/Listeners.h
+ /home/dmitriy/University/ImageEditor/Image/util/Math.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/FlipEffect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/LogoEffect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/ScaleEffect.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
 CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -207,6 +233,60 @@ CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.o
  /home/dmitriy/University/ImageEditor/Image/ui/Button.h
  /home/dmitriy/University/ImageEditor/Image/ui/View.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
+CMakeFiles/ImageAnalyser.dir/ui/CheckBox.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Drawable.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Font.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Glyph.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/PrimitiveType.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/RenderStates.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/RenderTarget.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/RenderWindow.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Text.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Texture.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Transform.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Transformable.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Vertex.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/VertexArray.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/View.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Clock.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/NonCopyable.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/String.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/String.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Time.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Utf.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Utf.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector3.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector3.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/ContextSettings.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Cursor.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Event.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/GlResource.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Joystick.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Keyboard.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Mouse.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Sensor.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/VideoMode.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Window.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+ /home/dmitriy/University/ImageEditor/Image/ui/CheckBox.cpp
+ /home/dmitriy/University/ImageEditor/Image/ui/CheckBox.h
+ /home/dmitriy/University/ImageEditor/Image/ui/View.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
 CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -257,6 +337,7 @@ CMakeFiles/ImageAnalyser.dir/ui/ImageView.cpp.o
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
 CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -305,6 +386,7 @@ CMakeFiles/ImageAnalyser.dir/ui/UI.cpp.o
  /home/dmitriy/University/ImageEditor/Image/ui/UI.h
  /home/dmitriy/University/ImageEditor/Image/ui/View.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
 CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -352,6 +434,7 @@ CMakeFiles/ImageAnalyser.dir/ui/View.cpp.o
  /home/dmitriy/University/ImageEditor/Image/ui/View.cpp
  /home/dmitriy/University/ImageEditor/Image/ui/View.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
 CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -414,10 +497,17 @@ CMakeFiles/ImageAnalyser.dir/ui/Window.cpp.o
  /home/dmitriy/University/ImageEditor/Image/ui/Window.cpp
  /home/dmitriy/University/ImageEditor/Image/ui/Window.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.h
 CMakeFiles/ImageAnalyser.dir/util/Bitmap.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.cpp
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
@@ -432,15 +522,35 @@ CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
  /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.cpp
  /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
+CMakeFiles/ImageAnalyser.dir/util/Math.cpp.o
+ /home/dmitriy/University/ImageEditor/Image/util/Math.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/Math.h
 CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.cpp
@@ -450,6 +560,11 @@ CMakeFiles/ImageAnalyser.dir/util/effects/Effect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.cpp
@@ -458,6 +573,11 @@ CMakeFiles/ImageAnalyser.dir/util/effects/FlipEffect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
@@ -467,17 +587,168 @@ CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.cpp
  /home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.h
+CMakeFiles/ImageAnalyser.dir/util/effects/LogoEffect.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/Math.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/LogoEffect.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/effects/LogoEffect.h
 CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
  /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.cpp
  /home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.h
+CMakeFiles/ImageAnalyser.dir/util/effects/ScaleEffect.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/Math.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/ScaleEffect.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/effects/ScaleEffect.h
+CMakeFiles/ImageAnalyser.dir/util/events/MouseEvent.cpp.o
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
+CMakeFiles/ImageAnalyser.dir/util/events/MouseEventProcessor.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/PrimitiveType.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/RenderStates.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/RenderTarget.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/RenderWindow.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Transform.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Vertex.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/View.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Clock.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Err.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/FileInputStream.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/InputStream.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Lock.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/MemoryInputStream.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Mutex.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/NonCopyable.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Sleep.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/String.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/String.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Thread.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Thread.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/ThreadLocal.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Time.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Utf.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Utf.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector3.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector3.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/ContextSettings.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Cursor.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Event.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/GlResource.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Joystick.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Keyboard.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Mouse.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Sensor.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/VideoMode.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/Window.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.h
+CMakeFiles/ImageAnalyser.dir/util/palette/ColorMetadata.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+CMakeFiles/ImageAnalyser.dir/util/palette/MedianSection.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
+CMakeFiles/ImageAnalyser.dir/util/palette/Palette.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
+CMakeFiles/ImageAnalyser.dir/util/palette/Quantization.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
+CMakeFiles/ImageAnalyser.dir/util/sorting/Array.cpp.o
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Array.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Array.h
+CMakeFiles/ImageAnalyser.dir/util/sorting/Comparator.cpp.o
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+CMakeFiles/ImageAnalyser.dir/util/sorting/QuickSorter.cpp.o
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
+CMakeFiles/ImageAnalyser.dir/util/sorting/Sorter.cpp.o
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h

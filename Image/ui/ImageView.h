@@ -18,17 +18,12 @@ public:
         window.draw(imageSprite);
     }
 
-    void loadFromBitmap(Bitmap *newBitmap) {
-        int pixelsCounter = 0;
-        image.create(newBitmap->width, newBitmap->height, sf::Color::Black);
-        for (int y = 0; y < newBitmap->height; y++) {
-            for (int x = 0; x < newBitmap->width; x++) {
-                auto pixel = newBitmap->getPixel(x, y);
-                image.setPixel(x, y, sf::Color(pixel->r, pixel->g, pixel->b, pixel->a));
-                pixelsCounter++;
-            }
-        }
-        imageTexture.loadFromImage(image);
+    void setImage(Bitmap *newBitmap) {
+        setImage(newBitmap->toSFMLImage());
+    }
+
+    void setImage(sf::Image newImage) {
+        imageTexture.loadFromImage(newImage);
         calcImageScale();
         calcImagePosition();
         imageSprite = sf::Sprite();
@@ -59,7 +54,7 @@ public:
     }
 
     sf::Vector2f getImagePosition() {
-        return imageScale;
+        return imagePosition;
     }
 
 protected:
@@ -73,9 +68,10 @@ protected:
     float imageRotation = 0;
 
     void prepareSprite() {
+        calcImageScale();
 //        imageSprite.setColor(sf::Color::Black);
         imageSprite.setTexture(imageTexture);
-        imageSprite.setScale(imageScale.x, imageScale.y);
+        imageSprite.setScale(imageScale);
         imageSprite.setPosition(position.x + imagePosition.x, position.y + imagePosition.y);
         imageSprite.setRotation(imageRotation);
     }

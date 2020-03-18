@@ -9,6 +9,7 @@
 #include <cstdlib>
 #include "Color.h"
 #include "effects/Effect.h"
+#include <SFML/Graphics/Image.hpp>
 
 class Bitmap {
 public:
@@ -22,6 +23,7 @@ public:
         this->height = height;
         pixels = new Color[width * height];
     }
+
 
     bool setPixel(int x, int y, Color color) {
         bool result = false;
@@ -73,9 +75,21 @@ public:
         return pixel;
     }
 
+    sf::Image toSFMLImage() {
+        sf::Image image;
+        image.create(width, height);
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                auto pixel = getPixel(x, y);
+                image.setPixel(x, y, pixel->toSFMLColor());
+            }
+        }
+        return image;
+    }
+
     void clear() {
         if (pixels != nullptr) {
-            delete(pixels);
+            delete[] pixels;
         }
         pixels = nullptr;
         width = 0;

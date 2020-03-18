@@ -20,10 +20,10 @@ public:
         frameColor = newFrameColor;
     }
 
-    void applyTo(Bitmap *bitmap) {
+    void applyTo(Bitmap *bitmap) override {
         int newWidth = frameWidth * 2 + bitmap->width;
         int newHeight = frameWidth * 2 + bitmap->height;
-        Color *newPixels = new Color[newWidth * newHeight];
+        auto *newPixels = new Color[newWidth * newHeight];
 
         if (frameWidth >= 0) {
             addFrame(newPixels, newWidth, newHeight);

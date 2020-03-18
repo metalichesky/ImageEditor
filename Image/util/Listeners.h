@@ -9,7 +9,8 @@
 #include <functional>
 
 class Listeners {
-    typedef function<void(View*, sf::Event)> OnClickListener;
+    typedef function<void(View*, MouseEvent)> OnClickListener;
+    typedef function<void(View*, MouseEvent)> OnScrollListener;
 };
 
 #endif //IMAGEANALYSER_LISTENERS_H

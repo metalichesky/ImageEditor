@@ -11,34 +11,71 @@
 #include <functional>
 #include <SFML/Window/Event.hpp>
 #include "../util/Color.h"
+#include "../util/events/MouseEvent.h"
 
 
 using namespace std;
 
 class View {
-    typedef function<void(View *, sf::Event)> OnClickListener;
+    typedef function<void(View *, MouseEvent)> OnClickListener;
+    typedef function<void(View*, MouseEvent)> OnScrollListener;
 public:
     OnClickListener onClickListener;
+    OnScrollListener onScrollListener;
 
     void setOnClickListener(OnClickListener newOnClickListener) {
         this->onClickListener = newOnClickListener;
     }
 
-    bool checkClick(int x, int y) {
+    void setOnScrollListener(OnScrollListener newOnScrollListener) {
+        this->onScrollListener = newOnScrollListener;
+    }
+
+    bool checkBorders(float x, float y) {
         bool inX = (x > position.x) && (x < position.x + size.x);
         bool inY = (y > position.y) && (y < position.y + size.y);
         return inX && inY;
     }
 
-    void processClick(int x, int y, sf::Event event) {
-        if (checkClick(x, y)) {
-            if (onClickListener != nullptr) {
-                (onClickListener)(this, event);
+    virtual bool processMouseEvent(MouseEvent event) {
+        bool allowContinueProcessing = true;
+        if (checkBorders(event.x, event.y)) {
+            if ((event.type & MouseEvent::TypeMask::PRESS) != 0) {
+                allowContinueProcessing = false;
+                pressed = true;
+            }
+            if ((event.type & MouseEvent::TypeMask::RELEASE) != 0){
+                if (pressed && !dragging) {
+                    if (onClickListener != nullptr) {
+                        (onClickListener)(this, event);
+                    }
+                }
+            }
+            if ((event.type & MouseEvent::TypeMask::SCROLL) != 0) {
+                if (onScrollListener != nullptr) {
+                    (onScrollListener)(this, event);
+                }
+                allowContinueProcessing = false;
             }
         }
+        if ((event.type & MouseEvent::TypeMask::MOVE) != 0) {
+            if (pressed && isDraggable) {
+                dragging = true;
+                allowContinueProcessing = false;
+                drag(event);
+            }
+        }
+        if ((event.type & MouseEvent::TypeMask::RELEASE) != 0){
+            dragging = false;
+            pressed = false;
+        }
+        return allowContinueProcessing;
     }
 
+
+
     virtual void draw(sf::RenderWindow &window) {
+        updatePosition();
         window.draw(backgroundSprite);
     }
 
@@ -84,12 +121,23 @@ public:
         return size;
     }
 
+    void setIsDraggable(bool newIsDraggable) {
+        this->isDraggable = newIsDraggable;
+    }
+
+    bool getIsDraggable() {
+        return this->isDraggable;
+    }
+
 protected:
     sf::Vector2f position = sf::Vector2f(0.0f, 0.0f);
     sf::Vector2f size = sf::Vector2f(0.0f, 0.0f);
     sf::Color backgroundColor = sf::Color::White;
     sf::Image *backgroundDrawable = nullptr;
     sf::Sprite backgroundSprite = sf::Sprite();
+    bool pressed = false;
+    bool dragging = false;
+    bool isDraggable = false;
 
     void updateBackground() {
         auto *backgroundTexture = new sf::Texture();
@@ -107,6 +155,17 @@ protected:
         backgroundSprite.setTexture(*backgroundTexture);
         backgroundSprite.setPosition(position.x, position.y);
     }
+
+private:
+    void updatePosition() {
+        backgroundSprite.setPosition(position);
+    }
+
+    void drag(MouseEvent &event) {
+        position.x += event.dX;
+        position.y += event.dY;
+    }
+
 };
 
 

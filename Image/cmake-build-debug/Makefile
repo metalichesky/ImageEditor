@@ -204,6 +204,33 @@ ui/Button.cpp.s:
 	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/ui/Button.cpp.s
 .PHONY : ui/Button.cpp.s
 
+ui/CheckBox.o: ui/CheckBox.cpp.o
+
+.PHONY : ui/CheckBox.o
+
+# target to build an object file
+ui/CheckBox.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/ui/CheckBox.cpp.o
+.PHONY : ui/CheckBox.cpp.o
+
+ui/CheckBox.i: ui/CheckBox.cpp.i
+
+.PHONY : ui/CheckBox.i
+
+# target to preprocess a source file
+ui/CheckBox.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/ui/CheckBox.cpp.i
+.PHONY : ui/CheckBox.cpp.i
+
+ui/CheckBox.s: ui/CheckBox.cpp.s
+
+.PHONY : ui/CheckBox.s
+
+# target to generate assembly for a file
+ui/CheckBox.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/ui/CheckBox.cpp.s
+.PHONY : ui/CheckBox.cpp.s
+
 ui/ImageView.o: ui/ImageView.cpp.o
 
 .PHONY : ui/ImageView.o
@@ -393,6 +420,33 @@ util/ImageBMP.cpp.s:
 	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.s
 .PHONY : util/ImageBMP.cpp.s
 
+util/Math.o: util/Math.cpp.o
+
+.PHONY : util/Math.o
+
+# target to build an object file
+util/Math.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/Math.cpp.o
+.PHONY : util/Math.cpp.o
+
+util/Math.i: util/Math.cpp.i
+
+.PHONY : util/Math.i
+
+# target to preprocess a source file
+util/Math.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/Math.cpp.i
+.PHONY : util/Math.cpp.i
+
+util/Math.s: util/Math.cpp.s
+
+.PHONY : util/Math.s
+
+# target to generate assembly for a file
+util/Math.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/Math.cpp.s
+.PHONY : util/Math.cpp.s
+
 util/effects/BlackWhiteEffect.o: util/effects/BlackWhiteEffect.cpp.o
 
 .PHONY : util/effects/BlackWhiteEffect.o
@@ -501,6 +555,33 @@ util/effects/FrameEffect.cpp.s:
 	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/effects/FrameEffect.cpp.s
 .PHONY : util/effects/FrameEffect.cpp.s
 
+util/effects/LogoEffect.o: util/effects/LogoEffect.cpp.o
+
+.PHONY : util/effects/LogoEffect.o
+
+# target to build an object file
+util/effects/LogoEffect.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/effects/LogoEffect.cpp.o
+.PHONY : util/effects/LogoEffect.cpp.o
+
+util/effects/LogoEffect.i: util/effects/LogoEffect.cpp.i
+
+.PHONY : util/effects/LogoEffect.i
+
+# target to preprocess a source file
+util/effects/LogoEffect.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/effects/LogoEffect.cpp.i
+.PHONY : util/effects/LogoEffect.cpp.i
+
+util/effects/LogoEffect.s: util/effects/LogoEffect.cpp.s
+
+.PHONY : util/effects/LogoEffect.s
+
+# target to generate assembly for a file
+util/effects/LogoEffect.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/effects/LogoEffect.cpp.s
+.PHONY : util/effects/LogoEffect.cpp.s
+
 util/effects/RotateEffect.o: util/effects/RotateEffect.cpp.o
 
 .PHONY : util/effects/RotateEffect.o
@@ -528,6 +609,303 @@ util/effects/RotateEffect.cpp.s:
 	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/effects/RotateEffect.cpp.s
 .PHONY : util/effects/RotateEffect.cpp.s
 
+util/effects/ScaleEffect.o: util/effects/ScaleEffect.cpp.o
+
+.PHONY : util/effects/ScaleEffect.o
+
+# target to build an object file
+util/effects/ScaleEffect.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/effects/ScaleEffect.cpp.o
+.PHONY : util/effects/ScaleEffect.cpp.o
+
+util/effects/ScaleEffect.i: util/effects/ScaleEffect.cpp.i
+
+.PHONY : util/effects/ScaleEffect.i
+
+# target to preprocess a source file
+util/effects/ScaleEffect.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/effects/ScaleEffect.cpp.i
+.PHONY : util/effects/ScaleEffect.cpp.i
+
+util/effects/ScaleEffect.s: util/effects/ScaleEffect.cpp.s
+
+.PHONY : util/effects/ScaleEffect.s
+
+# target to generate assembly for a file
+util/effects/ScaleEffect.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/effects/ScaleEffect.cpp.s
+.PHONY : util/effects/ScaleEffect.cpp.s
+
+util/events/MouseEvent.o: util/events/MouseEvent.cpp.o
+
+.PHONY : util/events/MouseEvent.o
+
+# target to build an object file
+util/events/MouseEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/events/MouseEvent.cpp.o
+.PHONY : util/events/MouseEvent.cpp.o
+
+util/events/MouseEvent.i: util/events/MouseEvent.cpp.i
+
+.PHONY : util/events/MouseEvent.i
+
+# target to preprocess a source file
+util/events/MouseEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/events/MouseEvent.cpp.i
+.PHONY : util/events/MouseEvent.cpp.i
+
+util/events/MouseEvent.s: util/events/MouseEvent.cpp.s
+
+.PHONY : util/events/MouseEvent.s
+
+# target to generate assembly for a file
+util/events/MouseEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/events/MouseEvent.cpp.s
+.PHONY : util/events/MouseEvent.cpp.s
+
+util/events/MouseEventProcessor.o: util/events/MouseEventProcessor.cpp.o
+
+.PHONY : util/events/MouseEventProcessor.o
+
+# target to build an object file
+util/events/MouseEventProcessor.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/events/MouseEventProcessor.cpp.o
+.PHONY : util/events/MouseEventProcessor.cpp.o
+
+util/events/MouseEventProcessor.i: util/events/MouseEventProcessor.cpp.i
+
+.PHONY : util/events/MouseEventProcessor.i
+
+# target to preprocess a source file
+util/events/MouseEventProcessor.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/events/MouseEventProcessor.cpp.i
+.PHONY : util/events/MouseEventProcessor.cpp.i
+
+util/events/MouseEventProcessor.s: util/events/MouseEventProcessor.cpp.s
+
+.PHONY : util/events/MouseEventProcessor.s
+
+# target to generate assembly for a file
+util/events/MouseEventProcessor.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/events/MouseEventProcessor.cpp.s
+.PHONY : util/events/MouseEventProcessor.cpp.s
+
+util/palette/ColorMetadata.o: util/palette/ColorMetadata.cpp.o
+
+.PHONY : util/palette/ColorMetadata.o
+
+# target to build an object file
+util/palette/ColorMetadata.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/ColorMetadata.cpp.o
+.PHONY : util/palette/ColorMetadata.cpp.o
+
+util/palette/ColorMetadata.i: util/palette/ColorMetadata.cpp.i
+
+.PHONY : util/palette/ColorMetadata.i
+
+# target to preprocess a source file
+util/palette/ColorMetadata.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/ColorMetadata.cpp.i
+.PHONY : util/palette/ColorMetadata.cpp.i
+
+util/palette/ColorMetadata.s: util/palette/ColorMetadata.cpp.s
+
+.PHONY : util/palette/ColorMetadata.s
+
+# target to generate assembly for a file
+util/palette/ColorMetadata.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/ColorMetadata.cpp.s
+.PHONY : util/palette/ColorMetadata.cpp.s
+
+util/palette/MedianSection.o: util/palette/MedianSection.cpp.o
+
+.PHONY : util/palette/MedianSection.o
+
+# target to build an object file
+util/palette/MedianSection.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/MedianSection.cpp.o
+.PHONY : util/palette/MedianSection.cpp.o
+
+util/palette/MedianSection.i: util/palette/MedianSection.cpp.i
+
+.PHONY : util/palette/MedianSection.i
+
+# target to preprocess a source file
+util/palette/MedianSection.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/MedianSection.cpp.i
+.PHONY : util/palette/MedianSection.cpp.i
+
+util/palette/MedianSection.s: util/palette/MedianSection.cpp.s
+
+.PHONY : util/palette/MedianSection.s
+
+# target to generate assembly for a file
+util/palette/MedianSection.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/MedianSection.cpp.s
+.PHONY : util/palette/MedianSection.cpp.s
+
+util/palette/Palette.o: util/palette/Palette.cpp.o
+
+.PHONY : util/palette/Palette.o
+
+# target to build an object file
+util/palette/Palette.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/Palette.cpp.o
+.PHONY : util/palette/Palette.cpp.o
+
+util/palette/Palette.i: util/palette/Palette.cpp.i
+
+.PHONY : util/palette/Palette.i
+
+# target to preprocess a source file
+util/palette/Palette.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/Palette.cpp.i
+.PHONY : util/palette/Palette.cpp.i
+
+util/palette/Palette.s: util/palette/Palette.cpp.s
+
+.PHONY : util/palette/Palette.s
+
+# target to generate assembly for a file
+util/palette/Palette.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/Palette.cpp.s
+.PHONY : util/palette/Palette.cpp.s
+
+util/palette/Quantization.o: util/palette/Quantization.cpp.o
+
+.PHONY : util/palette/Quantization.o
+
+# target to build an object file
+util/palette/Quantization.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/Quantization.cpp.o
+.PHONY : util/palette/Quantization.cpp.o
+
+util/palette/Quantization.i: util/palette/Quantization.cpp.i
+
+.PHONY : util/palette/Quantization.i
+
+# target to preprocess a source file
+util/palette/Quantization.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/Quantization.cpp.i
+.PHONY : util/palette/Quantization.cpp.i
+
+util/palette/Quantization.s: util/palette/Quantization.cpp.s
+
+.PHONY : util/palette/Quantization.s
+
+# target to generate assembly for a file
+util/palette/Quantization.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/palette/Quantization.cpp.s
+.PHONY : util/palette/Quantization.cpp.s
+
+util/sorting/Array.o: util/sorting/Array.cpp.o
+
+.PHONY : util/sorting/Array.o
+
+# target to build an object file
+util/sorting/Array.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/Array.cpp.o
+.PHONY : util/sorting/Array.cpp.o
+
+util/sorting/Array.i: util/sorting/Array.cpp.i
+
+.PHONY : util/sorting/Array.i
+
+# target to preprocess a source file
+util/sorting/Array.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/Array.cpp.i
+.PHONY : util/sorting/Array.cpp.i
+
+util/sorting/Array.s: util/sorting/Array.cpp.s
+
+.PHONY : util/sorting/Array.s
+
+# target to generate assembly for a file
+util/sorting/Array.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/Array.cpp.s
+.PHONY : util/sorting/Array.cpp.s
+
+util/sorting/Comparator.o: util/sorting/Comparator.cpp.o
+
+.PHONY : util/sorting/Comparator.o
+
+# target to build an object file
+util/sorting/Comparator.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/Comparator.cpp.o
+.PHONY : util/sorting/Comparator.cpp.o
+
+util/sorting/Comparator.i: util/sorting/Comparator.cpp.i
+
+.PHONY : util/sorting/Comparator.i
+
+# target to preprocess a source file
+util/sorting/Comparator.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/Comparator.cpp.i
+.PHONY : util/sorting/Comparator.cpp.i
+
+util/sorting/Comparator.s: util/sorting/Comparator.cpp.s
+
+.PHONY : util/sorting/Comparator.s
+
+# target to generate assembly for a file
+util/sorting/Comparator.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/Comparator.cpp.s
+.PHONY : util/sorting/Comparator.cpp.s
+
+util/sorting/QuickSorter.o: util/sorting/QuickSorter.cpp.o
+
+.PHONY : util/sorting/QuickSorter.o
+
+# target to build an object file
+util/sorting/QuickSorter.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/QuickSorter.cpp.o
+.PHONY : util/sorting/QuickSorter.cpp.o
+
+util/sorting/QuickSorter.i: util/sorting/QuickSorter.cpp.i
+
+.PHONY : util/sorting/QuickSorter.i
+
+# target to preprocess a source file
+util/sorting/QuickSorter.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/QuickSorter.cpp.i
+.PHONY : util/sorting/QuickSorter.cpp.i
+
+util/sorting/QuickSorter.s: util/sorting/QuickSorter.cpp.s
+
+.PHONY : util/sorting/QuickSorter.s
+
+# target to generate assembly for a file
+util/sorting/QuickSorter.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/QuickSorter.cpp.s
+.PHONY : util/sorting/QuickSorter.cpp.s
+
+util/sorting/Sorter.o: util/sorting/Sorter.cpp.o
+
+.PHONY : util/sorting/Sorter.o
+
+# target to build an object file
+util/sorting/Sorter.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/Sorter.cpp.o
+.PHONY : util/sorting/Sorter.cpp.o
+
+util/sorting/Sorter.i: util/sorting/Sorter.cpp.i
+
+.PHONY : util/sorting/Sorter.i
+
+# target to preprocess a source file
+util/sorting/Sorter.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/Sorter.cpp.i
+.PHONY : util/sorting/Sorter.cpp.i
+
+util/sorting/Sorter.s: util/sorting/Sorter.cpp.s
+
+.PHONY : util/sorting/Sorter.s
+
+# target to generate assembly for a file
+util/sorting/Sorter.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/sorting/Sorter.cpp.s
+.PHONY : util/sorting/Sorter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -546,6 +924,9 @@ help:
 	@echo "... ui/Button.o"
 	@echo "... ui/Button.i"
 	@echo "... ui/Button.s"
+	@echo "... ui/CheckBox.o"
+	@echo "... ui/CheckBox.i"
+	@echo "... ui/CheckBox.s"
 	@echo "... ui/ImageView.o"
 	@echo "... ui/ImageView.i"
 	@echo "... ui/ImageView.s"
@@ -567,6 +948,9 @@ help:
 	@echo "... util/ImageBMP.o"
 	@echo "... util/ImageBMP.i"
 	@echo "... util/ImageBMP.s"
+	@echo "... util/Math.o"
+	@echo "... util/Math.i"
+	@echo "... util/Math.s"
 	@echo "... util/effects/BlackWhiteEffect.o"
 	@echo "... util/effects/BlackWhiteEffect.i"
 	@echo "... util/effects/BlackWhiteEffect.s"
@@ -579,9 +963,45 @@ help:
 	@echo "... util/effects/FrameEffect.o"
 	@echo "... util/effects/FrameEffect.i"
 	@echo "... util/effects/FrameEffect.s"
+	@echo "... util/effects/LogoEffect.o"
+	@echo "... util/effects/LogoEffect.i"
+	@echo "... util/effects/LogoEffect.s"
 	@echo "... util/effects/RotateEffect.o"
 	@echo "... util/effects/RotateEffect.i"
 	@echo "... util/effects/RotateEffect.s"
+	@echo "... util/effects/ScaleEffect.o"
+	@echo "... util/effects/ScaleEffect.i"
+	@echo "... util/effects/ScaleEffect.s"
+	@echo "... util/events/MouseEvent.o"
+	@echo "... util/events/MouseEvent.i"
+	@echo "... util/events/MouseEvent.s"
+	@echo "... util/events/MouseEventProcessor.o"
+	@echo "... util/events/MouseEventProcessor.i"
+	@echo "... util/events/MouseEventProcessor.s"
+	@echo "... util/palette/ColorMetadata.o"
+	@echo "... util/palette/ColorMetadata.i"
+	@echo "... util/palette/ColorMetadata.s"
+	@echo "... util/palette/MedianSection.o"
+	@echo "... util/palette/MedianSection.i"
+	@echo "... util/palette/MedianSection.s"
+	@echo "... util/palette/Palette.o"
+	@echo "... util/palette/Palette.i"
+	@echo "... util/palette/Palette.s"
+	@echo "... util/palette/Quantization.o"
+	@echo "... util/palette/Quantization.i"
+	@echo "... util/palette/Quantization.s"
+	@echo "... util/sorting/Array.o"
+	@echo "... util/sorting/Array.i"
+	@echo "... util/sorting/Array.s"
+	@echo "... util/sorting/Comparator.o"
+	@echo "... util/sorting/Comparator.i"
+	@echo "... util/sorting/Comparator.s"
+	@echo "... util/sorting/QuickSorter.o"
+	@echo "... util/sorting/QuickSorter.i"
+	@echo "... util/sorting/QuickSorter.s"
+	@echo "... util/sorting/Sorter.o"
+	@echo "... util/sorting/Sorter.i"
+	@echo "... util/sorting/Sorter.s"
 .PHONY : help
 
 

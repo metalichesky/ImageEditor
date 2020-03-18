@@ -41,7 +41,9 @@ string getCurrentPath(char* argv[]) {
 int main(int argc, char* argv[]) {
 
 //    readImage("/home/dmitriy/University/ImageAnalyser/images/example.bmp");
-
+    for (int i = 0; i < argc; i++) {
+        cout << argv[i] << endl;
+    }
 
 
     MainWindow window(800, 600, "ImageAnalyser");

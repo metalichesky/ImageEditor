@@ -103,6 +103,12 @@
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/ui/Button.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/ui/CheckBox.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/ui/CheckBox.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/ui/ImageView.cpp">
 			<Option target="ImageAnalyser"/>
 		</Unit>
@@ -148,6 +154,12 @@
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/Listeners.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/Math.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/Math.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.cpp">
 			<Option target="ImageAnalyser"/>
 		</Unit>
@@ -172,10 +184,82 @@
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/effects/FrameEffect.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/effects/LogoEffect.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/effects/LogoEffect.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.cpp">
 			<Option target="ImageAnalyser"/>
 		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/effects/RotateEffect.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/effects/ScaleEffect.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/effects/ScaleEffect.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/palette/Palette.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/sorting/Array.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/sorting/Array.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/CMakeLists.txt">

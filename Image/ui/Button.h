@@ -67,6 +67,7 @@ public:
 
     void draw(sf::RenderWindow &window) override {
         View::draw(window);
+        updatePosition();
         window.draw(textObj);
     }
 
@@ -85,8 +86,10 @@ protected:
         textObj.setFillColor(sf::Color(textColor.r, textColor.g, textColor.b, textColor.a));
         textObj.setPosition(position);
         textObj.setStyle(textStyle);
+    }
+private:
+    void updatePosition() {
         auto bounds = textObj.getGlobalBounds();
-
         int textWidth = bounds.width;
         int textHeight = bounds.height;
         float diffX = size.x - textWidth;

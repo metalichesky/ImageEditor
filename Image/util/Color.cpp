@@ -45,5 +45,7 @@ Color Color::getRandomColor() {
 }
 
 Color Color::BLACK = Color::getColor(0,0,0);
-
+double Color::COEF_RED = 0.299;
+double Color::COEF_GREEN = 0.587;
+double Color::COEF_BLUE = 0.144;
 #include "Color.h"

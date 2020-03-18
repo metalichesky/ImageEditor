@@ -10,6 +10,7 @@
 #include <SFML/System.hpp>
 #include <SFML/Window/Event.hpp>
 #include "UI.h"
+#include "../util/events/MouseEventProcessor.h"
 
 using namespace std;
 
@@ -19,7 +20,6 @@ public:
     int height = 600;
     string title = "Title";
     sf::Color clearColor = sf::Color::Black;
-    sf::Vector2f mousePosition;
     UI ui;
 
     sf::RenderWindow *window;
@@ -36,16 +36,19 @@ public:
     void uiThreadFunc() {
         window = new sf::RenderWindow(sf::VideoMode(width, height), title);
         sf::Event event;
+        MouseEventProcessor mouseEventProcessor;
+        MouseEvent mouseEvent;
         onStart();
+        window->setFramerateLimit(60);
+        window->setVerticalSyncEnabled(true);
         while (window->isOpen()) {
             while (window->pollEvent(event)) {
                 if (event.type == sf::Event::Closed)
                     window->close();
-                if (event.type == sf::Event::MouseButtonPressed) {
-                    mousePosition = window->mapPixelToCoords(
-                            sf::Mouse::getPosition(*((sf::Window *) window)));
-                    for (View* view: ui.views) {
-                        view->processClick(mousePosition.x, mousePosition.y, event);
+                mouseEvent = mouseEventProcessor.process(window, event);
+                if (mouseEvent.type != MouseEvent::TypeMask::NONE) {
+                    for (int i = ui.views.size()-1; i >= 0; i--) {
+                        if (!ui.views[i]->processMouseEvent(mouseEvent)) break;
                     }
                 }
             }
