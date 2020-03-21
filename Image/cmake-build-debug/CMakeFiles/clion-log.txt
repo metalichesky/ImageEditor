@@ -1,9 +1,11 @@
 /home/dmitriy/Programs/clion-2019.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "CodeBlocks - Unix Makefiles" /home/dmitriy/University/ImageEditor/Image
 -- Found SFML 2.5.1 in /home/dmitriy/Libs/SFML-2.5.1/lib/cmake/SFML
+Found SFML! ^_^
 -- SFML_INCLUDE_DIR: /home/dmitriy/Libs/SFML-2.5.1/include
 -- SFML_LIBRARIES: 
 -- SFML_VERSION: 2.5.1
 Found OpenMP! ^_^
+Found Boost! ^_^
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/dmitriy/University/ImageEditor/Image/cmake-build-debug

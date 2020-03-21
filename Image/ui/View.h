@@ -39,7 +39,7 @@ public:
 
     virtual bool processMouseEvent(MouseEvent event) {
         bool allowContinueProcessing = true;
-        if (checkBorders(event.x, event.y)) {
+        if (checkBorders(event.x, event.y) && isVisible) {
             if ((event.type & MouseEvent::TypeMask::PRESS) != 0) {
                 allowContinueProcessing = false;
                 pressed = true;
@@ -72,11 +72,11 @@ public:
         return allowContinueProcessing;
     }
 
-
-
     virtual void draw(sf::RenderWindow &window) {
-        updatePosition();
-        window.draw(backgroundSprite);
+        if (isVisible) {
+            updatePosition();
+            window.draw(backgroundSprite);
+        }
     }
 
     void setBackgroundColor(sf::Color color) {
@@ -121,13 +121,22 @@ public:
         return size;
     }
 
-    void setIsDraggable(bool newIsDraggable) {
+    void setDraggable(bool newIsDraggable) {
         this->isDraggable = newIsDraggable;
     }
 
-    bool getIsDraggable() {
+    bool getDraggable() {
         return this->isDraggable;
     }
+
+    void setVisible(bool newIsVisible) {
+        isVisible = newIsVisible;
+    }
+
+    bool getVisible() {
+        return isVisible;
+    }
+
 
 protected:
     sf::Vector2f position = sf::Vector2f(0.0f, 0.0f);
@@ -138,6 +147,7 @@ protected:
     bool pressed = false;
     bool dragging = false;
     bool isDraggable = false;
+    bool isVisible = true;
 
     void updateBackground() {
         auto *backgroundTexture = new sf::Texture();

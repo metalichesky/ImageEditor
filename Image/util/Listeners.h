@@ -11,6 +11,7 @@
 class Listeners {
     typedef function<void(View*, MouseEvent)> OnClickListener;
     typedef function<void(View*, MouseEvent)> OnScrollListener;
+    typedef function<void(View*, sf::Vector2f)> OnScaledListener;
 };
 
 #endif //IMAGEANALYSER_LISTENERS_H

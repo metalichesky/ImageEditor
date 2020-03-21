@@ -31,13 +31,18 @@ public:
         for (int i = 0; i < newColorsCount; i++) {
             tempVector[i] = &newColors[i];
         }
-        sort(tempVector.begin(), tempVector.end(), SortColorPointers());
+        sort(tempVector.begin(), tempVector.end());
+
         Color* currentColor = nullptr;
         Color* previousColor = nullptr;
         int colorsCounter = -1;
         for (int i = 0; i < newColorsCount; i++) {
             currentColor = tempVector.at(i);
-            if (currentColor != previousColor) {
+            cout << "Current color: " << ((currentColor != nullptr) ? currentColor->toString() : "null") << endl;
+            cout << "Previous color: " << ((previousColor != nullptr) ? previousColor->toString() : "null") << endl;
+//            cout << "Equals " << (*previousColor == *currentColor) << endl;
+
+            if (previousColor == nullptr || *currentColor != *previousColor) {
                 colors->push_back(*currentColor);
                 colorsData->push_back(ColorMetadata(currentColor, 1));
                 colorsCounter++;
@@ -69,7 +74,9 @@ public:
     }
 
     void resize(int newColorsCount, Quantization &quantization) {
+        cout << "Before resizing colors count: " << colors->size() << endl;
         auto newColors = quantization.quantizeColors(colorsData, newColorsCount);
+        cout << "After resizing colors count: " << newColors->size() << endl;
         delete colors;
         colors = newColors;
     }
@@ -140,7 +147,7 @@ private:
     struct SortColorPointers
     {
         bool operator()(const Color* one, const Color* two) {
-            if (one != nullptr && two != nullptr) return one->b < two->b;
+            if (one != nullptr && two != nullptr) return (one->r + one->g + one->b) < (two->r + two->g + two->b);
             else return one == nullptr;
         }
     };

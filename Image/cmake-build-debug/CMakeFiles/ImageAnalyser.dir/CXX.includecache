@@ -497,6 +497,8 @@ ui/ImageView.h
 /home/dmitriy/University/ImageEditor/Image/ui/ImageView.h
 util/ImageBMP.h
 /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
+util/ImagePCX.h
+/home/dmitriy/University/ImageEditor/Image/util/ImagePCX.h
 util/Listeners.h
 /home/dmitriy/University/ImageEditor/Image/util/Listeners.h
 ui/View.h
@@ -513,7 +515,11 @@ util/effects/ScaleEffect.h
 /home/dmitriy/University/ImageEditor/Image/util/effects/ScaleEffect.h
 util/effects/LogoEffect.h
 /home/dmitriy/University/ImageEditor/Image/util/effects/LogoEffect.h
+util/crypto/BitmapCoder.h
+/home/dmitriy/University/ImageEditor/Image/util/crypto/BitmapCoder.h
 functional
+-
+boost/filesystem.hpp
 -
 
 /home/dmitriy/University/ImageEditor/Image/main.cpp
@@ -521,11 +527,7 @@ chrono
 -
 iostream
 -
-fstream
--
-cmath
--
-list
+boost/filesystem.hpp
 -
 util/ImageBMP.h
 /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
@@ -625,8 +627,28 @@ cmath
 -
 iostream
 -
+sstream
+-
 
 /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
+iostream
+-
+fstream
+-
+cstdint
+-
+cmath
+-
+sstream
+-
+bitset
+-
+Bitmap.h
+/home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+palette/Palette.h
+/home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
+
+/home/dmitriy/University/ImageEditor/Image/util/ImagePCX.h
 iostream
 -
 fstream
@@ -652,6 +674,24 @@ functional
 
 /home/dmitriy/University/ImageEditor/Image/util/Math.h
 algorithm
+-
+
+/home/dmitriy/University/ImageEditor/Image/util/crypto/BitmapCoder.h
+bitset
+-
+cstring
+-
+CoderData.h
+/home/dmitriy/University/ImageEditor/Image/util/crypto/CoderData.h
+../Bitmap.h
+/home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+
+/home/dmitriy/University/ImageEditor/Image/util/crypto/CoderData.h
+cstdint
+-
+string
+-
+fstream
 -
 
 /home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.h

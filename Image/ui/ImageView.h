@@ -10,16 +10,25 @@
 #include "../util/Bitmap.h"
 
 class ImageView: public View {
+    typedef function<void(View*, sf::Vector2f)> OnScaledListener;
 public:
 
     void draw(sf::RenderWindow &window) override {
-        View::draw(window);
-        prepareSprite();
-        window.draw(imageSprite);
+        if (isVisible) {
+            View::draw(window);
+            prepareSprite();
+            window.draw(imageSprite);
+        }
     }
 
     void setImage(Bitmap *newBitmap) {
-        setImage(newBitmap->toSFMLImage());
+        if (newBitmap != nullptr) {
+            setImage(newBitmap->toSFMLImage());
+        } else {
+            sf::Image image;
+            image.create(0,0);
+            setImage(image);
+        }
     }
 
     void setImage(sf::Image newImage) {
@@ -33,11 +42,13 @@ public:
         imageScale.x = scaleX;
         imageScale.y = scaleY;
         calcImagePosition();
+        if (onScaledListener != nullptr) {
+            (onScaledListener)(this, imageScale);
+        }
     }
 
     void setImageScale(sf::Vector2f newScale) {
-        imageScale = newScale;
-        calcImagePosition();
+        setImageScale(newScale.x, newScale.y);
     }
 
     sf::Vector2f getImageScale() {
@@ -57,19 +68,21 @@ public:
         return imagePosition;
     }
 
+    void setOnScaledListener(OnScaledListener newOnScaleListener) {
+        this->onScaledListener = newOnScaleListener;
+    }
+
 protected:
     sf::Sprite imageSprite;
     sf::Texture imageTexture;
     sf::Image image;
-
+    OnScaledListener onScaledListener;
     sf::Vector2f imageScale = sf::Vector2f(1.0f, 1.0f);
     sf::Vector2f imagePosition = sf::Vector2f(0.0f, 0.0f);
 
     float imageRotation = 0;
 
     void prepareSprite() {
-        calcImageScale();
-//        imageSprite.setColor(sf::Color::Black);
         imageSprite.setTexture(imageTexture);
         imageSprite.setScale(imageScale);
         imageSprite.setPosition(position.x + imagePosition.x, position.y + imagePosition.y);
@@ -81,14 +94,9 @@ protected:
         float imageWidth = imageTextureSize.x;
         float imageHeight = imageTextureSize.y;
         float scale = 0;
-        float diffX = imageWidth - size.x;
-        float diffY = imageHeight - size.y;
-
-        if (diffX > diffY) {
-            scale = size.x / imageWidth;
-        } else {
-            scale = size.y / imageHeight;
-        }
+        float ratioX = imageWidth / size.x;
+        float ratioY = imageHeight / size.y;
+        scale = (ratioX > ratioY) ? size.x / imageWidth : size.y / imageHeight;
         imageScale.x = scale;
         imageScale.y = scale;
     }

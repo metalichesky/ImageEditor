@@ -434,6 +434,45 @@ CMakeFiles/ImageAnalyser.dir/util/Math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/Math.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/Math.cpp -o CMakeFiles/ImageAnalyser.dir/util/Math.cpp.s
 
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: ../util/crypto/BitmapCoder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/crypto/BitmapCoder.cpp
+
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/crypto/BitmapCoder.cpp > CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.i
+
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/crypto/BitmapCoder.cpp -o CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.s
+
+CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
+CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.o: ../util/crypto/CoderData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/crypto/CoderData.cpp
+
+CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/crypto/CoderData.cpp > CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.i
+
+CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/crypto/CoderData.cpp -o CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.s
+
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: CMakeFiles/ImageAnalyser.dir/flags.make
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/ImagePCX.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o -c /home/dmitriy/University/ImageEditor/Image/util/ImagePCX.cpp
+
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitriy/University/ImageEditor/Image/util/ImagePCX.cpp > CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.i
+
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitriy/University/ImageEditor/Image/util/ImagePCX.cpp -o CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.s
+
 # Object files for target ImageAnalyser
 ImageAnalyser_OBJECTS = \
 "CMakeFiles/ImageAnalyser.dir/main.cpp.o" \
@@ -464,7 +503,10 @@ ImageAnalyser_OBJECTS = \
 "CMakeFiles/ImageAnalyser.dir/util/events/MouseEvent.cpp.o" \
 "CMakeFiles/ImageAnalyser.dir/util/events/MouseEventProcessor.cpp.o" \
 "CMakeFiles/ImageAnalyser.dir/util/effects/LogoEffect.cpp.o" \
-"CMakeFiles/ImageAnalyser.dir/util/Math.cpp.o"
+"CMakeFiles/ImageAnalyser.dir/util/Math.cpp.o" \
+"CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o" \
+"CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.o" \
+"CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o"
 
 # External object files for target ImageAnalyser
 ImageAnalyser_EXTERNAL_OBJECTS =
@@ -498,12 +540,17 @@ ImageAnalyser: CMakeFiles/ImageAnalyser.dir/util/events/MouseEvent.cpp.o
 ImageAnalyser: CMakeFiles/ImageAnalyser.dir/util/events/MouseEventProcessor.cpp.o
 ImageAnalyser: CMakeFiles/ImageAnalyser.dir/util/effects/LogoEffect.cpp.o
 ImageAnalyser: CMakeFiles/ImageAnalyser.dir/util/Math.cpp.o
+ImageAnalyser: CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o
+ImageAnalyser: CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.o
+ImageAnalyser: CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o
 ImageAnalyser: CMakeFiles/ImageAnalyser.dir/build.make
 ImageAnalyser: /home/dmitriy/Libs/SFML-2.5.1/lib/libsfml-graphics.so.2.5.1
 ImageAnalyser: /home/dmitriy/Libs/SFML-2.5.1/lib/libsfml-window.so.2.5.1
 ImageAnalyser: /home/dmitriy/Libs/SFML-2.5.1/lib/libsfml-system.so.2.5.1
+ImageAnalyser: /usr/lib/x86_64-linux-gnu/libboost_filesystem.a
+ImageAnalyser: /usr/lib/x86_64-linux-gnu/libboost_system.a
 ImageAnalyser: CMakeFiles/ImageAnalyser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable ImageAnalyser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dmitriy/University/ImageEditor/Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable ImageAnalyser"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ImageAnalyser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

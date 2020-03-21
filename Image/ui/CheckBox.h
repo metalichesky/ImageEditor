@@ -95,10 +95,12 @@ public:
     }
 
     void draw(sf::RenderWindow &window) override {
-        View::draw(window);
-        updatePosition();
-        window.draw(checkedSprite);
-        window.draw(textObj);
+        if (isVisible) {
+            View::draw(window);
+            updatePosition();
+            window.draw(checkedSprite);
+            window.draw(textObj);
+        }
     }
 
 protected:

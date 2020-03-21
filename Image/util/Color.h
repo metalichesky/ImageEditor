@@ -10,6 +10,7 @@
 #include <SFML/Graphics/Color.hpp>
 #include <cmath>
 #include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -28,6 +29,42 @@ public:
 
     void toAvg();
 
+    uint8_t getComponent(uint componentNum) {
+        uint8_t result = 0;
+        switch (componentNum) {
+            case 0:
+                result = r;
+                break;
+            case 1:
+                result = g;
+                break;
+            case 2:
+                result = b;
+                break;
+            default:
+                result = a;
+                break;
+        }
+        return result;
+    }
+
+    void setComponent(uint componentNum, uint8_t value) {
+        switch (componentNum) {
+            case 0:
+                r = value;
+                break;
+            case 1:
+                g = value;
+                break;
+            case 2:
+                b = value;
+                break;
+            default:
+                a = value;
+                break;
+        }
+    }
+
     static Color BLACK;
 
     static Color getColor(int r, int g, int b);
@@ -44,6 +81,12 @@ public:
         return sf::Color(r, g, b, a);
     }
 
+    string toString() {
+        stringstream ss;
+        ss << "r = " << (uint) r << " g = " << (uint) g << " b = " << (uint) b << " a = " << (uint) a;
+        return ss.str();
+    }
+
     Color copy() {
         return Color(r, g, b, a);
     }
@@ -58,32 +101,31 @@ public:
 
     double distanceTo(Color &other, bool useCoefficients = false) {
         double distance = 0;
-        distance += pow(r - other.r, 2) * (useCoefficients? COEF_RED : 1);
-        distance += pow(g - other.g, 2) * (useCoefficients? COEF_GREEN : 1);
-        distance += pow(b - other.b, 2) * (useCoefficients? COEF_BLUE : 1);
+        distance += pow(r - other.r, 2) * (useCoefficients ? COEF_RED : 1);
+        distance += pow(g - other.g, 2) * (useCoefficients ? COEF_GREEN : 1);
+        distance += pow(b - other.b, 2) * (useCoefficients ? COEF_BLUE : 1);
 //        distance += pow(a - other.a, 2);0
         distance = sqrt(distance);
         return distance;
     }
 
-    int compare(const Color &other) {
-        int result = 0;
-        ulong sumOne = (r << 16) + (g << 8) + b;
-        ulong sumTwo = (other.r << 16) + (other.g << 8) + other.b;
-        return (int) (sumOne - sumTwo);
+    long compare(const Color &other) {
+        uint32_t sumOne = (r << 16U) | (g << 8U) | b;
+        uint32_t sumTwo = (other.r << 16U) | (other.g << 8U) | other.b;
+        return (long) (sumOne - sumTwo);
     }
 
-    inline bool operator<(const Color &other) { return compare(other) < 0; }
+    inline bool operator<(const Color &other) { return compare(other) < 0L; }
 
-    inline bool operator>(const Color &other) { return compare(other) > 0; }
+    inline bool operator>(const Color &other) { return compare(other) > 0L; }
 
-    inline bool operator>=(const Color &other) { return compare(other) >= 0; }
+    inline bool operator>=(const Color &other) { return compare(other) >= 0L; }
 
-    inline bool operator<=(const Color &other) { return compare(other) <= 0; }
+    inline bool operator<=(const Color &other) { return compare(other) <= 0L; }
 
-    inline bool operator!=(const Color &other) { return compare(other) != 0; }
+    inline bool operator!=(const Color &other) { return compare(other) != 0L; }
 
-    inline bool operator==(const Color &other) { return compare(other) == 0; }
+    inline bool operator==(const Color &other) { return compare(other) == 0L; }
 
     Color operator+(Color &other) {
         Color newColor = this->copy();

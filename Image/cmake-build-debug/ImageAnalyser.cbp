@@ -151,6 +151,12 @@
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/ImagePCX.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/ImagePCX.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/Listeners.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
@@ -158,6 +164,18 @@
 			<Option target="ImageAnalyser"/>
 		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/Math.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/crypto/BitmapCoder.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/crypto/BitmapCoder.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/crypto/CoderData.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/crypto/CoderData.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/effects/BlackWhiteEffect.cpp">

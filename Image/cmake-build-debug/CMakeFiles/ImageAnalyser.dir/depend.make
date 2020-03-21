@@ -72,8 +72,11 @@ CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../ui/Window.h
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/Bitmap.h
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/Color.h
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/ImageBMP.h
+CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/ImagePCX.h
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/Listeners.h
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/Math.h
+CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/crypto/BitmapCoder.h
+CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/crypto/CoderData.h
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/effects/BlackWhiteEffect.h
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/effects/Effect.h
 CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o: ../util/effects/FlipEffect.h
@@ -162,8 +165,11 @@ CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../ui/Window.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/Bitmap.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/Color.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/ImageBMP.h
+CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/ImagePCX.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/Listeners.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/Math.h
+CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/crypto/BitmapCoder.h
+CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/crypto/CoderData.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/effects/BlackWhiteEffect.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/effects/Effect.h
 CMakeFiles/ImageAnalyser.dir/main.cpp.o: ../util/effects/FlipEffect.h
@@ -539,8 +545,47 @@ CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o: ../util/sorting/Comparator.h
 CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o: ../util/sorting/QuickSorter.h
 CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o: ../util/sorting/Sorter.h
 
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/Bitmap.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/Color.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/ImagePCX.cpp
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/ImagePCX.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/effects/Effect.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/palette/ColorMetadata.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/palette/MedianSection.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/palette/Palette.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/palette/Quantization.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/sorting/Comparator.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/sorting/QuickSorter.h
+CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o: ../util/sorting/Sorter.h
+
 CMakeFiles/ImageAnalyser.dir/util/Math.cpp.o: ../util/Math.cpp
 CMakeFiles/ImageAnalyser.dir/util/Math.cpp.o: ../util/Math.h
+
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: ../util/Bitmap.h
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: ../util/Color.h
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: ../util/crypto/BitmapCoder.cpp
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: ../util/crypto/BitmapCoder.h
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: ../util/crypto/CoderData.h
+CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o: ../util/effects/Effect.h
+
+CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.o: ../util/crypto/CoderData.cpp
+CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.o: ../util/crypto/CoderData.h
 
 CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/ImageAnalyser.dir/util/effects/BlackWhiteEffect.cpp.o: /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp

@@ -420,6 +420,33 @@ util/ImageBMP.cpp.s:
 	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.s
 .PHONY : util/ImageBMP.cpp.s
 
+util/ImagePCX.o: util/ImagePCX.cpp.o
+
+.PHONY : util/ImagePCX.o
+
+# target to build an object file
+util/ImagePCX.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o
+.PHONY : util/ImagePCX.cpp.o
+
+util/ImagePCX.i: util/ImagePCX.cpp.i
+
+.PHONY : util/ImagePCX.i
+
+# target to preprocess a source file
+util/ImagePCX.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.i
+.PHONY : util/ImagePCX.cpp.i
+
+util/ImagePCX.s: util/ImagePCX.cpp.s
+
+.PHONY : util/ImagePCX.s
+
+# target to generate assembly for a file
+util/ImagePCX.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.s
+.PHONY : util/ImagePCX.cpp.s
+
 util/Math.o: util/Math.cpp.o
 
 .PHONY : util/Math.o
@@ -446,6 +473,60 @@ util/Math.s: util/Math.cpp.s
 util/Math.cpp.s:
 	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/Math.cpp.s
 .PHONY : util/Math.cpp.s
+
+util/crypto/BitmapCoder.o: util/crypto/BitmapCoder.cpp.o
+
+.PHONY : util/crypto/BitmapCoder.o
+
+# target to build an object file
+util/crypto/BitmapCoder.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.o
+.PHONY : util/crypto/BitmapCoder.cpp.o
+
+util/crypto/BitmapCoder.i: util/crypto/BitmapCoder.cpp.i
+
+.PHONY : util/crypto/BitmapCoder.i
+
+# target to preprocess a source file
+util/crypto/BitmapCoder.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.i
+.PHONY : util/crypto/BitmapCoder.cpp.i
+
+util/crypto/BitmapCoder.s: util/crypto/BitmapCoder.cpp.s
+
+.PHONY : util/crypto/BitmapCoder.s
+
+# target to generate assembly for a file
+util/crypto/BitmapCoder.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/crypto/BitmapCoder.cpp.s
+.PHONY : util/crypto/BitmapCoder.cpp.s
+
+util/crypto/CoderData.o: util/crypto/CoderData.cpp.o
+
+.PHONY : util/crypto/CoderData.o
+
+# target to build an object file
+util/crypto/CoderData.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.o
+.PHONY : util/crypto/CoderData.cpp.o
+
+util/crypto/CoderData.i: util/crypto/CoderData.cpp.i
+
+.PHONY : util/crypto/CoderData.i
+
+# target to preprocess a source file
+util/crypto/CoderData.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.i
+.PHONY : util/crypto/CoderData.cpp.i
+
+util/crypto/CoderData.s: util/crypto/CoderData.cpp.s
+
+.PHONY : util/crypto/CoderData.s
+
+# target to generate assembly for a file
+util/crypto/CoderData.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/crypto/CoderData.cpp.s
+.PHONY : util/crypto/CoderData.cpp.s
 
 util/effects/BlackWhiteEffect.o: util/effects/BlackWhiteEffect.cpp.o
 
@@ -948,9 +1029,18 @@ help:
 	@echo "... util/ImageBMP.o"
 	@echo "... util/ImageBMP.i"
 	@echo "... util/ImageBMP.s"
+	@echo "... util/ImagePCX.o"
+	@echo "... util/ImagePCX.i"
+	@echo "... util/ImagePCX.s"
 	@echo "... util/Math.o"
 	@echo "... util/Math.i"
 	@echo "... util/Math.s"
+	@echo "... util/crypto/BitmapCoder.o"
+	@echo "... util/crypto/BitmapCoder.i"
+	@echo "... util/crypto/BitmapCoder.s"
+	@echo "... util/crypto/CoderData.o"
+	@echo "... util/crypto/CoderData.i"
+	@echo "... util/crypto/CoderData.s"
 	@echo "... util/effects/BlackWhiteEffect.o"
 	@echo "... util/effects/BlackWhiteEffect.i"
 	@echo "... util/effects/BlackWhiteEffect.s"
