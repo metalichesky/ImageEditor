@@ -393,60 +393,6 @@ util/Color.cpp.s:
 	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/Color.cpp.s
 .PHONY : util/Color.cpp.s
 
-util/ImageBMP.o: util/ImageBMP.cpp.o
-
-.PHONY : util/ImageBMP.o
-
-# target to build an object file
-util/ImageBMP.cpp.o:
-	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o
-.PHONY : util/ImageBMP.cpp.o
-
-util/ImageBMP.i: util/ImageBMP.cpp.i
-
-.PHONY : util/ImageBMP.i
-
-# target to preprocess a source file
-util/ImageBMP.cpp.i:
-	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.i
-.PHONY : util/ImageBMP.cpp.i
-
-util/ImageBMP.s: util/ImageBMP.cpp.s
-
-.PHONY : util/ImageBMP.s
-
-# target to generate assembly for a file
-util/ImageBMP.cpp.s:
-	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.s
-.PHONY : util/ImageBMP.cpp.s
-
-util/ImagePCX.o: util/ImagePCX.cpp.o
-
-.PHONY : util/ImagePCX.o
-
-# target to build an object file
-util/ImagePCX.cpp.o:
-	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o
-.PHONY : util/ImagePCX.cpp.o
-
-util/ImagePCX.i: util/ImagePCX.cpp.i
-
-.PHONY : util/ImagePCX.i
-
-# target to preprocess a source file
-util/ImagePCX.cpp.i:
-	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.i
-.PHONY : util/ImagePCX.cpp.i
-
-util/ImagePCX.s: util/ImagePCX.cpp.s
-
-.PHONY : util/ImagePCX.s
-
-# target to generate assembly for a file
-util/ImagePCX.cpp.s:
-	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.s
-.PHONY : util/ImagePCX.cpp.s
-
 util/Math.o: util/Math.cpp.o
 
 .PHONY : util/Math.o
@@ -771,6 +717,141 @@ util/events/MouseEventProcessor.cpp.s:
 	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/events/MouseEventProcessor.cpp.s
 .PHONY : util/events/MouseEventProcessor.cpp.s
 
+util/image/Image.o: util/image/Image.cpp.o
+
+.PHONY : util/image/Image.o
+
+# target to build an object file
+util/image/Image.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/Image.cpp.o
+.PHONY : util/image/Image.cpp.o
+
+util/image/Image.i: util/image/Image.cpp.i
+
+.PHONY : util/image/Image.i
+
+# target to preprocess a source file
+util/image/Image.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/Image.cpp.i
+.PHONY : util/image/Image.cpp.i
+
+util/image/Image.s: util/image/Image.cpp.s
+
+.PHONY : util/image/Image.s
+
+# target to generate assembly for a file
+util/image/Image.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/Image.cpp.s
+.PHONY : util/image/Image.cpp.s
+
+util/image/ImageBMP.o: util/image/ImageBMP.cpp.o
+
+.PHONY : util/image/ImageBMP.o
+
+# target to build an object file
+util/image/ImageBMP.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImageBMP.cpp.o
+.PHONY : util/image/ImageBMP.cpp.o
+
+util/image/ImageBMP.i: util/image/ImageBMP.cpp.i
+
+.PHONY : util/image/ImageBMP.i
+
+# target to preprocess a source file
+util/image/ImageBMP.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImageBMP.cpp.i
+.PHONY : util/image/ImageBMP.cpp.i
+
+util/image/ImageBMP.s: util/image/ImageBMP.cpp.s
+
+.PHONY : util/image/ImageBMP.s
+
+# target to generate assembly for a file
+util/image/ImageBMP.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImageBMP.cpp.s
+.PHONY : util/image/ImageBMP.cpp.s
+
+util/image/ImageFile.o: util/image/ImageFile.cpp.o
+
+.PHONY : util/image/ImageFile.o
+
+# target to build an object file
+util/image/ImageFile.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImageFile.cpp.o
+.PHONY : util/image/ImageFile.cpp.o
+
+util/image/ImageFile.i: util/image/ImageFile.cpp.i
+
+.PHONY : util/image/ImageFile.i
+
+# target to preprocess a source file
+util/image/ImageFile.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImageFile.cpp.i
+.PHONY : util/image/ImageFile.cpp.i
+
+util/image/ImageFile.s: util/image/ImageFile.cpp.s
+
+.PHONY : util/image/ImageFile.s
+
+# target to generate assembly for a file
+util/image/ImageFile.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImageFile.cpp.s
+.PHONY : util/image/ImageFile.cpp.s
+
+util/image/ImageFormat.o: util/image/ImageFormat.cpp.o
+
+.PHONY : util/image/ImageFormat.o
+
+# target to build an object file
+util/image/ImageFormat.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImageFormat.cpp.o
+.PHONY : util/image/ImageFormat.cpp.o
+
+util/image/ImageFormat.i: util/image/ImageFormat.cpp.i
+
+.PHONY : util/image/ImageFormat.i
+
+# target to preprocess a source file
+util/image/ImageFormat.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImageFormat.cpp.i
+.PHONY : util/image/ImageFormat.cpp.i
+
+util/image/ImageFormat.s: util/image/ImageFormat.cpp.s
+
+.PHONY : util/image/ImageFormat.s
+
+# target to generate assembly for a file
+util/image/ImageFormat.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImageFormat.cpp.s
+.PHONY : util/image/ImageFormat.cpp.s
+
+util/image/ImagePCX.o: util/image/ImagePCX.cpp.o
+
+.PHONY : util/image/ImagePCX.o
+
+# target to build an object file
+util/image/ImagePCX.cpp.o:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImagePCX.cpp.o
+.PHONY : util/image/ImagePCX.cpp.o
+
+util/image/ImagePCX.i: util/image/ImagePCX.cpp.i
+
+.PHONY : util/image/ImagePCX.i
+
+# target to preprocess a source file
+util/image/ImagePCX.cpp.i:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImagePCX.cpp.i
+.PHONY : util/image/ImagePCX.cpp.i
+
+util/image/ImagePCX.s: util/image/ImagePCX.cpp.s
+
+.PHONY : util/image/ImagePCX.s
+
+# target to generate assembly for a file
+util/image/ImagePCX.cpp.s:
+	$(MAKE) -f CMakeFiles/ImageAnalyser.dir/build.make CMakeFiles/ImageAnalyser.dir/util/image/ImagePCX.cpp.s
+.PHONY : util/image/ImagePCX.cpp.s
+
 util/palette/ColorMetadata.o: util/palette/ColorMetadata.cpp.o
 
 .PHONY : util/palette/ColorMetadata.o
@@ -1026,12 +1107,6 @@ help:
 	@echo "... util/Color.o"
 	@echo "... util/Color.i"
 	@echo "... util/Color.s"
-	@echo "... util/ImageBMP.o"
-	@echo "... util/ImageBMP.i"
-	@echo "... util/ImageBMP.s"
-	@echo "... util/ImagePCX.o"
-	@echo "... util/ImagePCX.i"
-	@echo "... util/ImagePCX.s"
 	@echo "... util/Math.o"
 	@echo "... util/Math.i"
 	@echo "... util/Math.s"
@@ -1068,6 +1143,21 @@ help:
 	@echo "... util/events/MouseEventProcessor.o"
 	@echo "... util/events/MouseEventProcessor.i"
 	@echo "... util/events/MouseEventProcessor.s"
+	@echo "... util/image/Image.o"
+	@echo "... util/image/Image.i"
+	@echo "... util/image/Image.s"
+	@echo "... util/image/ImageBMP.o"
+	@echo "... util/image/ImageBMP.i"
+	@echo "... util/image/ImageBMP.s"
+	@echo "... util/image/ImageFile.o"
+	@echo "... util/image/ImageFile.i"
+	@echo "... util/image/ImageFile.s"
+	@echo "... util/image/ImageFormat.o"
+	@echo "... util/image/ImageFormat.i"
+	@echo "... util/image/ImageFormat.s"
+	@echo "... util/image/ImagePCX.o"
+	@echo "... util/image/ImagePCX.i"
+	@echo "... util/image/ImagePCX.s"
 	@echo "... util/palette/ColorMetadata.o"
 	@echo "... util/palette/ColorMetadata.i"
 	@echo "... util/palette/ColorMetadata.s"

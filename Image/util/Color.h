@@ -99,11 +99,12 @@ public:
 //        return r + g + b + (needAlpha ? a : 0);
 //    }
 
-    double distanceTo(Color &other, bool useCoefficients = false) {
+    double distanceTo(Color *other, bool useCoefficients = false) {
         double distance = 0;
-        distance += pow(r - other.r, 2) * (useCoefficients ? COEF_RED : 1);
-        distance += pow(g - other.g, 2) * (useCoefficients ? COEF_GREEN : 1);
-        distance += pow(b - other.b, 2) * (useCoefficients ? COEF_BLUE : 1);
+        if (other == nullptr) return MAXFLOAT;
+        distance += pow(r - other->r, 2) * (useCoefficients ? COEF_RED : 1);
+        distance += pow(g - other->g, 2) * (useCoefficients ? COEF_GREEN : 1);
+        distance += pow(b - other->b, 2) * (useCoefficients ? COEF_BLUE : 1);
 //        distance += pow(a - other.a, 2);0
         distance = sqrt(distance);
         return distance;

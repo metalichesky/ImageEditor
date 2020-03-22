@@ -72,8 +72,6 @@ CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o
  /home/dmitriy/University/ImageEditor/Image/ui/Window.h
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
- /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
- /home/dmitriy/University/ImageEditor/Image/util/ImagePCX.h
  /home/dmitriy/University/ImageEditor/Image/util/Listeners.h
  /home/dmitriy/University/ImageEditor/Image/util/Math.h
  /home/dmitriy/University/ImageEditor/Image/util/crypto/BitmapCoder.h
@@ -87,6 +85,11 @@ CMakeFiles/ImageAnalyser.dir/MainWindow.cpp.o
  /home/dmitriy/University/ImageEditor/Image/util/effects/ScaleEffect.h
  /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
  /home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/Image.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImagePCX.h
  /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
  /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
  /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
@@ -165,8 +168,6 @@ CMakeFiles/ImageAnalyser.dir/main.cpp.o
  /home/dmitriy/University/ImageEditor/Image/ui/Window.h
  /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
- /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
- /home/dmitriy/University/ImageEditor/Image/util/ImagePCX.h
  /home/dmitriy/University/ImageEditor/Image/util/Listeners.h
  /home/dmitriy/University/ImageEditor/Image/util/Math.h
  /home/dmitriy/University/ImageEditor/Image/util/crypto/BitmapCoder.h
@@ -180,6 +181,11 @@ CMakeFiles/ImageAnalyser.dir/main.cpp.o
  /home/dmitriy/University/ImageEditor/Image/util/effects/ScaleEffect.h
  /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
  /home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/Image.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImagePCX.h
  /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
  /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
  /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
@@ -524,48 +530,6 @@ CMakeFiles/ImageAnalyser.dir/util/Color.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
  /home/dmitriy/University/ImageEditor/Image/util/Color.cpp
  /home/dmitriy/University/ImageEditor/Image/util/Color.h
-CMakeFiles/ImageAnalyser.dir/util/ImageBMP.cpp.o
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
- /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
- /home/dmitriy/University/ImageEditor/Image/util/Color.h
- /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.cpp
- /home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h
- /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
- /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
- /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
- /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
- /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
- /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
- /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
- /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
-CMakeFiles/ImageAnalyser.dir/util/ImagePCX.cpp.o
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
- /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
- /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
- /home/dmitriy/University/ImageEditor/Image/util/Color.h
- /home/dmitriy/University/ImageEditor/Image/util/ImagePCX.cpp
- /home/dmitriy/University/ImageEditor/Image/util/ImagePCX.h
- /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
- /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
- /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
- /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
- /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
- /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
- /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
- /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
 CMakeFiles/ImageAnalyser.dir/util/Math.cpp.o
  /home/dmitriy/University/ImageEditor/Image/util/Math.cpp
  /home/dmitriy/University/ImageEditor/Image/util/Math.h
@@ -745,6 +709,95 @@ CMakeFiles/ImageAnalyser.dir/util/events/MouseEventProcessor.cpp.o
  /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
  /home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.cpp
  /home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.h
+CMakeFiles/ImageAnalyser.dir/util/image/Image.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/Image.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/image/Image.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImagePCX.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
+CMakeFiles/ImageAnalyser.dir/util/image/ImageBMP.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
+CMakeFiles/ImageAnalyser.dir/util/image/ImageFile.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.h
+CMakeFiles/ImageAnalyser.dir/util/image/ImageFormat.cpp.o
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.h
+CMakeFiles/ImageAnalyser.dir/util/image/ImagePCX.cpp.o
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ /home/dmitriy/Libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ /home/dmitriy/University/ImageEditor/Image/util/Bitmap.h
+ /home/dmitriy/University/ImageEditor/Image/util/Color.h
+ /home/dmitriy/University/ImageEditor/Image/util/effects/Effect.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.h
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImagePCX.cpp
+ /home/dmitriy/University/ImageEditor/Image/util/image/ImagePCX.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/MedianSection.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Palette.h
+ /home/dmitriy/University/ImageEditor/Image/util/palette/Quantization.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Comparator.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/QuickSorter.h
+ /home/dmitriy/University/ImageEditor/Image/util/sorting/Sorter.h
 CMakeFiles/ImageAnalyser.dir/util/palette/ColorMetadata.cpp.o
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Config.hpp
  /home/dmitriy/Libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp

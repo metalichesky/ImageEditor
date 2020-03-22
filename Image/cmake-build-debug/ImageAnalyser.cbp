@@ -145,18 +145,6 @@
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/Color.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
-		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/ImageBMP.cpp">
-			<Option target="ImageAnalyser"/>
-		</Unit>
-		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/ImageBMP.h">
-			<Option target="ImageAnalyser"/>
-		</Unit>
-		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/ImagePCX.cpp">
-			<Option target="ImageAnalyser"/>
-		</Unit>
-		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/ImagePCX.h">
-			<Option target="ImageAnalyser"/>
-		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/Listeners.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
@@ -230,6 +218,36 @@
 			<Option target="ImageAnalyser"/>
 		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/events/MouseEventProcessor.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/Image.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/Image.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.h">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/ImagePCX.cpp">
+			<Option target="ImageAnalyser"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/image/ImagePCX.h">
 			<Option target="ImageAnalyser"/>
 		</Unit>
 		<Unit filename="/home/dmitriy/University/ImageEditor/Image/util/palette/ColorMetadata.cpp">

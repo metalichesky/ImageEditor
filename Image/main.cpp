@@ -1,7 +1,7 @@
 #include <chrono>
 #include <iostream>
 #include <boost/filesystem.hpp>
-#include "util/ImageBMP.h"
+#include "util/image/ImageBMP.h"
 #include "ui/Window.h"
 #include "MainWindow.h"
 

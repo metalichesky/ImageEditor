@@ -11,25 +11,16 @@
 #include <cmath>
 #include <sstream>
 #include <bitset>
-#include "Bitmap.h"
-#include "palette/Palette.h"
+#include "../Bitmap.h"
+#include "ImageFile.h"
+#include "ImageFormat.h"
+#include "../palette/Palette.h"
 
 using namespace std;
 
-enum class BMPType {
-    COLOR1BIT, COLOR4BIT, COLOR8BIT, COLOR16BIT, COLOR24BIT, COLOR32BIT
-};
-
-class ImageBMP {
+class ImageBMP : public ImageFile {
 public:
-    static const int16_t BF_TYPE;
-    int paletteColorsCount = 0;
-    Color *pixels = nullptr;
-    int width = 0;
-    int height = 0;
-
-
-    void readFromFile(const string &filePath) {
+    void readFromFile(string filePath) override {
         cout << "Reading BMP image file " + filePath << endl;
         fstream fileStream;
 
@@ -40,10 +31,13 @@ public:
         paletteColorsCount = imageHeader.bitsPerPixel > 8 ? imageHeader.colorsCount :
                              imageHeader.colorsCount > 0 ? imageHeader.colorsCount : pow(2, imageHeader.bitsPerPixel);
         colors = new BMPPaletteItem[paletteColorsCount];
+
         if (paletteColorsCount > 0) {
-            for (int i = 0; i < paletteColorsCount; i++) {
-                fileStream.read((char *) &(colors[i]), sizeof(BMPPaletteItem));
-            }
+            uint palettePosition = (imageHeader.size > 0) ? //if size field is present
+                    imageHeader.size + sizeof(fileHeader) :  //then use it
+                    sizeof(imageHeader) + sizeof(fileHeader) ; //else find size manually
+            fileStream.seekg(palettePosition, fstream::beg);
+            fileStream.read((char *) colors, sizeof(BMPPaletteItem) * paletteColorsCount);
         }
         width = imageHeader.width;
         height = imageHeader.height;
@@ -64,6 +58,9 @@ public:
             case 4 :
                 readColor4Image(&fileStream);
                 break;
+            case 2 :
+                readColor2Image(&fileStream);
+                break;
             case 1 :
                 readColor1Image(&fileStream);
         }
@@ -74,29 +71,33 @@ public:
         printPaletteColors();
     }
 
-    void writeToFile(const string &filePath, BMPType type = BMPType::COLOR24BIT) {
+    void writeToFile(string filePath, ImageFormat format) {
         cout << "Writing BMP image file " + filePath << endl;
         fstream fileStream;
         fileStream.open(filePath, fstream::out | fstream::binary);
-
-        switch (type) {
-            case BMPType::COLOR32BIT :
+        switch (format.colorDepth) {
+            case ColorDepth::COLOR32BIT :
                 writeColor32Image(&fileStream);
                 break;
-            case BMPType::COLOR24BIT :
+            case ColorDepth::COLOR24BIT :
                 writeColor24Image(&fileStream);
                 break;
-            case BMPType::COLOR8BIT :
+            case ColorDepth::COLOR8BIT :
                 writeColor8Image(&fileStream);
                 break;
-            case BMPType::COLOR4BIT :
+            case ColorDepth::COLOR4BIT :
                 writeColor4Image(&fileStream);
                 break;
-            case BMPType::COLOR1BIT :
-                writeColor4Image(&fileStream);
+            case ColorDepth::COLOR2BIT :
+                writeColor2Image(&fileStream);
                 break;
+            case ColorDepth::COLOR1BIT :
+                writeColor1Image(&fileStream);
+                break;
+            default: /* Unsupported */
+                cout << "Color depth not supported for this format" << endl;
+            break;
         }
-
         printFileHeader();
         printImageHeader();
         fileStream.close();
@@ -115,12 +116,12 @@ public:
     void printImageHeader() {
         cout << "--- BMP map info ---" << endl;
         cout << "InfoHeader bounds: " << imageHeader.size << endl;
-        cout << "Image width: " << imageHeader.width << endl;
-        cout << "Image height: " << imageHeader.height << endl;
+        cout << "ImageFile width: " << imageHeader.width << endl;
+        cout << "ImageFile height: " << imageHeader.height << endl;
         cout << "Planes count: " << imageHeader.planesCount << endl;
         cout << "Bits per pixel: " << imageHeader.bitsPerPixel << endl;
         cout << "Compression type: " << imageHeader.compressionType << endl;
-        cout << "Image Size (bytes): " << imageHeader.imageSize << endl;
+        cout << "ImageFile Size (bytes): " << imageHeader.imageSize << endl;
         cout << "X pixels per meter: " << imageHeader.xPixelsPerMeter << endl;
         cout << "Y pixels per meter: " << imageHeader.yPixelsPerMeter << endl;
         cout << "Colors used count: " << imageHeader.colorsCount << endl;
@@ -135,7 +136,7 @@ public:
         }
     }
 
-    Bitmap *toBitmap() {
+    Bitmap *toBitmap() override {
         auto *bitmap = new Bitmap(imageHeader.width, imageHeader.height);
         for (int y = 0; y < imageHeader.height; y++) {
             for (int x = 0; x < imageHeader.width; x++) {
@@ -146,7 +147,7 @@ public:
         return bitmap;
     }
 
-    void fromBitmap(Bitmap *bitmap) {
+    void fromBitmap(Bitmap *bitmap) override {
         width = bitmap->width;
         height = bitmap->height;
         int pixelsCount = width * height;
@@ -157,25 +158,14 @@ public:
     }
 
     ~ImageBMP() {
-        clear();
-    }
-
-    void clear() {
-        if (pixels != nullptr) {
-            delete[] pixels;
-        }
-        if (colors != nullptr) {
-            delete[] colors;
-        }
-        pixels = nullptr;
-        colors = nullptr;
-        width = 0;
-        height = 0;
-        paletteColorsCount = 0;
+        delete[] colors;
     }
 
 
 private:
+
+    static const int16_t BF_TYPE;
+    uint paletteColorsCount = 0;
 
     static char *toBytes(void *someValue) {
         char *bytes = new char[2];
@@ -293,7 +283,40 @@ private:
             for (int j = 0; j < width;) {
                 fileStream->read((char *) &byte, sizeof(byte));
                 for (uint k = 0; k < 2; k++) {
-                    colorIndex = mask & (byte >> (k * bitsPerPixel));
+                    colorIndex = mask & (byte >> ((1U-k) * bitsPerPixel));
+                    pixelIdx = i * width + j;
+                    if (colorIndex < paletteColorsCount) {
+                        paletteColor = colors[colorIndex];
+                        pixels[pixelIdx].r = paletteColor.red;
+                        pixels[pixelIdx].g = paletteColor.green;
+                        pixels[pixelIdx].b = paletteColor.blue;
+                    }
+                    j++;
+                }
+            }
+            for (int k = 0; k < additionalBytesToRead; k++) {
+                fileStream->read((char *) &byte, sizeof(byte));
+            }
+        }
+    }
+
+
+    void readColor2Image(fstream *fileStream) {
+        pixels = new Color[width * height];
+        int additionalBytesToRead = calcPadding(2);
+        int8_t byte;
+        uint pixelIdx = 0;
+        BMPPaletteItem paletteColor{};
+        uint8_t colorIndex = 0;
+        uint8_t bitsPerPixel = 2;
+        uint8_t mask = 0B11;
+
+        fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
+        for (int i = height - 1; i >= 0; i--) {
+            for (int j = 0; j < width;) {
+                fileStream->read((char *) &byte, sizeof(colorIndex));
+                for (uint k = 0; k < 4; k++) {
+                    colorIndex = mask & (byte >> ((3U-k) * bitsPerPixel));
                     pixelIdx = i * width + j;
                     if (colorIndex < paletteColorsCount) {
                         paletteColor = colors[colorIndex];
@@ -313,7 +336,7 @@ private:
     void readColor1Image(fstream *fileStream) {
         pixels = new Color[width * height];
         int additionalBytesToRead = calcPadding(1);
-        int8_t byte;
+        uint8_t byte;
         uint pixelIdx = 0;
         BMPPaletteItem paletteColor{};
         uint8_t colorIndex = 0;
@@ -323,9 +346,9 @@ private:
         fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
         for (int i = height - 1; i >= 0; i--) {
             for (int j = 0; j < width;) {
-                fileStream->read((char *) &colorIndex, sizeof(colorIndex));
+                fileStream->read((char *) &byte, sizeof(colorIndex));
                 for (uint k = 0; k < 8; k++) {
-                    colorIndex = mask & (colorIndex >> (k * bitsPerPixel));
+                    colorIndex = mask & (byte >> (7U-k));
                     pixelIdx = i * width + j;
                     if (colorIndex < paletteColorsCount) {
                         paletteColor = colors[colorIndex];
@@ -343,8 +366,9 @@ private:
     }
 
     void writeColor32Image(fstream *fileStream) {
-        int additionalBytesPerRow = calcPadding(32);
-        writeHeaders(fileStream, 32, additionalBytesPerRow);
+        uint8_t bitsPerPixel = 32;
+        int additionalBytesPerRow = calcPadding(bitsPerPixel);
+        writeHeaders(fileStream, bitsPerPixel, additionalBytesPerRow);
         fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
 
         int idx = 0;
@@ -366,8 +390,9 @@ private:
     }
 
     void writeColor24Image(fstream *fileStream) {
-        int additionalBytesPerRow = calcPadding(24);
-        writeHeaders(fileStream, 24, additionalBytesPerRow);
+        uint8_t bitsPerPixel = 24;
+        int additionalBytesPerRow = calcPadding(bitsPerPixel);
+        writeHeaders(fileStream, bitsPerPixel, additionalBytesPerRow);
         fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
 
         int idx = 0;
@@ -388,15 +413,11 @@ private:
     }
 
     void writeColor8Image(fstream *fileStream) {
-        int additionalBytesPerRow = calcPadding(8);
+        uint8_t bitsPerPixel = 8;
+        int additionalBytesPerRow = calcPadding(bitsPerPixel);
         paletteColorsCount = 256;
-        writeHeaders(fileStream, 8, additionalBytesPerRow);
-
-        Palette palette(pixels, width * height);
-        cout << "Change colors count form " << palette.colors->size() << " to " << paletteColorsCount << "..." << endl;
-        MedianSection median;
-        palette.resize(paletteColorsCount, median);
-        writePalette(fileStream, palette);
+        writeHeaders(fileStream, bitsPerPixel, additionalBytesPerRow);
+        Palette *palette = writePalette(fileStream);
 
         fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
         int idx = 0;
@@ -407,7 +428,7 @@ private:
             for (int j = 0; j < width; j++) {
                 idx = i * width + j;
                 currentPixel = pixels[idx];
-                paletteIndex = palette.getNearestIndex(currentPixel);
+                paletteIndex = palette->getNearestIndex(&currentPixel);
                 fileStream->write((char *) &paletteIndex, sizeof(paletteIndex));
             }
             for (int k = 0; k < additionalBytesPerRow; k++) {
@@ -417,32 +438,91 @@ private:
     }
 
     void writeColor4Image(fstream *fileStream) {
-        int additionalBytesPerRow = calcPadding(4);
+        uint8_t bitsPerPixel = 4;
+        int additionalBytesPerRow = calcPadding(bitsPerPixel);
         paletteColorsCount = 16;
-        writeHeaders(fileStream, 4, additionalBytesPerRow);
+        writeHeaders(fileStream, bitsPerPixel, additionalBytesPerRow);
+        Palette *palette = writePalette(fileStream);
 
-        Palette palette(pixels, width * height);
-        cout << "Change colors count form " << palette.colors->size() << " to " << paletteColorsCount << "..." << endl;
-        MedianSection median;
-        palette.resize(paletteColorsCount, median);
-
-        writePalette(fileStream, palette);
         fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
-
         int idx = 0;
         uint8_t byte = 0;
         uint8_t paletteIndex = 0;
         Color currentPixel;
         uint8_t mask = 0B1111;
-        uint8_t bitsPerPixel = 4;
         for (int i = height - 1; i >= 0; i--) {
             for (int j = 0; j < width;) {
                 byte = 0;
                 for (int k = 0; k < 2 && j < width; k++) {
                     idx = i * width + j;
                     currentPixel = pixels[idx];
-                    paletteIndex = palette.getNearestIndex(currentPixel);
-                    byte = byte | ((uint)(mask & paletteIndex) << (uint)((2 - k - 1) * bitsPerPixel));
+                    paletteIndex = palette->getNearestIndex(&currentPixel);
+                    byte = byte | ((uint)(mask & paletteIndex) << (uint)((1-k) * bitsPerPixel));
+                    j++;
+                }
+                fileStream->write((char *) &byte, sizeof(byte));
+            }
+            byte = 0;
+            for (int k = 0; k < additionalBytesPerRow; k++) {
+                fileStream->write((char *) &byte, sizeof(byte));
+            }
+        }
+    }
+
+
+    void writeColor2Image(fstream *fileStream) {
+        uint8_t bitsPerPixel = 2;
+        int additionalBytesPerRow = calcPadding(bitsPerPixel);
+        paletteColorsCount = 4;
+        writeHeaders(fileStream, bitsPerPixel, additionalBytesPerRow);
+        Palette *palette = writePalette(fileStream);
+
+        fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
+        int idx = 0;
+        uint8_t byte = 0;
+        uint8_t paletteIndex = 0;
+        Color currentPixel;
+        uint8_t mask = 0B11;
+        for (int i = height-1; i >= 0; i--) {
+            for (int j = 0; j < width;) {
+                byte = 0;
+                for (int k = 0; k < 4 && j < width; k++) {
+                    idx = i * width + j;
+                    currentPixel = pixels[idx];
+                    paletteIndex = palette->getNearestIndex(&currentPixel);
+                    byte = byte | ((uint)(mask & paletteIndex) << (uint)((3-k) * bitsPerPixel));
+                    j++;
+                }
+                fileStream->write((char *) &byte, sizeof(byte));
+            }
+            byte = 0;
+            for (int k = 0; k < additionalBytesPerRow; k++) {
+                fileStream->write((char *) &byte, sizeof(byte));
+            }
+        }
+    }
+
+    void writeColor1Image(fstream *fileStream) {
+        uint8_t bitsPerPixel = 1;
+        int additionalBytesPerRow = calcPadding(bitsPerPixel);
+        paletteColorsCount = 2;
+        writeHeaders(fileStream, bitsPerPixel, additionalBytesPerRow);
+        Palette *palette = writePalette(fileStream);
+
+        fileStream->seekg(fileHeader.bfOffsetBits, ios_base::beg);
+        int idx = 0;
+        uint8_t byte = 0;
+        uint8_t paletteIndex = 0;
+        Color currentPixel;
+        uint8_t mask = 0B1;
+        for (int i = height-1; i >= 0; i--) {
+            for (int j = 0; j < width;) {
+                byte = 0;
+                for (int k = 0; k < 8 && j < width; k++) {
+                    idx = i * width + j;
+                    currentPixel = pixels[idx];
+                    paletteIndex = palette->getNearestIndex(&currentPixel);
+                    byte = byte | ((uint)(mask & paletteIndex) << (uint)((7 - k) * bitsPerPixel));
                     j++;
                 }
                 fileStream->write((char *) &byte, sizeof(byte));
@@ -456,12 +536,12 @@ private:
 
     void writeHeaders(fstream *fileStream, int bitsPerPixel, int additionalBytesPerRow) {
         int pixelsCount = width * height;
+        uint imageDataSize = (uint)ceil((double)(pixelsCount * bitsPerPixel) / 8.0) + additionalBytesPerRow * height;
         fileHeader.bfType = BF_TYPE;
         fileHeader.bfSize = sizeof(fileHeader)
                             + sizeof(imageHeader)
                             + sizeof(BMPPaletteItem) * paletteColorsCount
-                            + pixelsCount * bitsPerPixel / 8
-                            + additionalBytesPerRow * height;
+                            + imageDataSize;
         fileHeader.bfOffsetBits = sizeof(fileHeader)
                                   + sizeof(imageHeader)
                                   + sizeof(BMPPaletteItem) * paletteColorsCount;
@@ -473,7 +553,7 @@ private:
         imageHeader.planesCount = 1;
         imageHeader.bitsPerPixel = bitsPerPixel;
         imageHeader.compressionType = 0;
-        imageHeader.imageSize = (bitsPerPixel * pixelsCount) / 8 + additionalBytesPerRow * height;
+        imageHeader.imageSize = imageDataSize;
         imageHeader.xPixelsPerMeter = 0;
         imageHeader.yPixelsPerMeter = 0;
         imageHeader.colorsCount = paletteColorsCount;
@@ -482,15 +562,20 @@ private:
         fileStream->write((char *) &imageHeader, sizeof(BMPImageHeader));
     }
 
-    void writePalette(fstream *fileStream, Palette &palette) {
+    Palette* writePalette(fstream *fileStream) {
+        Palette *palette = new Palette(pixels, width * height);
+        cout << "Change colors count form " << palette->colors->size() << " to " << paletteColorsCount << "..." << endl;
+        MedianSection median;
+        palette->resize(paletteColorsCount, median);
         BMPPaletteItem paletteItem{};
-        for (auto color: *palette.colors) {
+        for (auto color: *palette->colors) {
             paletteItem.red = color.r;
             paletteItem.green = color.g;
             paletteItem.blue = color.b;
             paletteItem.reversed = color.a;
             fileStream->write((char *) &paletteItem, sizeof(BMPPaletteItem));
         }
+        return palette;
     }
 
     int calcPadding(int bitsPerPixel) {

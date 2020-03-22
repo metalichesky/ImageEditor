@@ -38,8 +38,8 @@ public:
         int colorsCounter = -1;
         for (int i = 0; i < newColorsCount; i++) {
             currentColor = tempVector.at(i);
-            cout << "Current color: " << ((currentColor != nullptr) ? currentColor->toString() : "null") << endl;
-            cout << "Previous color: " << ((previousColor != nullptr) ? previousColor->toString() : "null") << endl;
+//            cout << "Current color: " << ((currentColor != nullptr) ? currentColor->toString() : "null") << endl;
+//            cout << "Previous color: " << ((previousColor != nullptr) ? previousColor->toString() : "null") << endl;
 //            cout << "Equals " << (*previousColor == *currentColor) << endl;
 
             if (previousColor == nullptr || *currentColor != *previousColor) {
@@ -55,12 +55,14 @@ public:
         cout << "Palette ready" << endl;
     }
 
-    int getNearestIndex(Color &color) {
+    int getNearestIndex(Color *color) {
         int idx = 0;
         double minDistance = MAXFLOAT;
         double currentDistance = 0.0;
+        Color *currentColor = nullptr;
         for (int i = 0; i < colors->size(); i++) {
-            currentDistance = color.distanceTo(colors->at(i));
+            currentColor = &(colors->at(i));
+            currentDistance = color->distanceTo(currentColor);
             if (currentDistance < minDistance) {
                 minDistance = currentDistance;
                 idx = i;
@@ -69,15 +71,15 @@ public:
         return idx;
     }
 
-    Color getNearestColor(Color &color) {
+    Color getNearestColor(Color *color) {
         return colors->at(getNearestIndex(color));
     }
 
-    void resize(int newColorsCount, Quantization &quantization) {
+    void resize(uint newColorsCount, Quantization &quantization) {
         cout << "Before resizing colors count: " << colors->size() << endl;
         auto newColors = quantization.quantizeColors(colorsData, newColorsCount);
         cout << "After resizing colors count: " << newColors->size() << endl;
-        delete colors;
+        colors->clear();
         colors = newColors;
     }
 

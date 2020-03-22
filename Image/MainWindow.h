@@ -10,8 +10,9 @@
 #include "ui/Button.h"
 #include "ui/CheckBox.h"
 #include "ui/ImageView.h"
-#include "util/ImageBMP.h"
-#include "util/ImagePCX.h"
+#include "util/image/Image.h"
+#include "util/image/ImageBMP.h"
+#include "util/image/ImagePCX.h"
 #include "util/Listeners.h"
 #include "ui/View.h"
 #include "util/effects/BlackWhiteEffect.h"
@@ -51,10 +52,17 @@ public:
     Button *encodeDataButton = new Button();
     Button *decodeDataButton = new Button();
 
+
+    Button *saveBMPButton = new Button();
+    CheckBox *checkBoxBMP1Button = new CheckBox();
+    CheckBox *checkBoxBMP2Button = new CheckBox();
     CheckBox *checkBoxBMP4Button = new CheckBox();
     CheckBox *checkBoxBMP8Button = new CheckBox();
     CheckBox *checkBoxBMP24Button = new CheckBox();
 
+    Button *savePCXButton = new Button();
+    CheckBox *checkBoxPCX1Button = new CheckBox();
+    CheckBox *checkBoxPCX2Button = new CheckBox();
     CheckBox *checkBoxPCX4Button = new CheckBox();
     CheckBox *checkBoxPCX8Button = new CheckBox();
     CheckBox *checkBoxPCX24Button = new CheckBox();
@@ -71,7 +79,8 @@ public:
     }
 
     void onCreate() override {
-        loadPCXImage("wolf24.pcx");
+        string fileName = "wolf24.bmp";
+        loadImage(fileName);
 
         imageView->setBackgroundColor(sf::Color::Black);
         imageView->setSize(width, height);
@@ -226,15 +235,7 @@ public:
         saveImageButton->setTextStyle(sf::Text::Style::Bold);
         saveImageButton->setTextSize(18);
         saveImageButton->setOnClickListener([this](View *v, MouseEvent event) {
-            if (checkBoxBMP4Button->getCheckedState()) {
-                saveImage("result4bit.bmp", BMPType::COLOR4BIT);
-            }
-            if (checkBoxBMP8Button->getCheckedState()) {
-                saveImage("result8bit.bmp", BMPType::COLOR8BIT);
-            }
-            if (checkBoxBMP24Button->getCheckedState()) {
-                saveImage("result24bit.bmp", BMPType::COLOR24BIT);
-            }
+            saveToSelectedFormats();
         });
         ui.views.push_back(saveImageButton);
 
@@ -253,9 +254,42 @@ public:
         });
         ui.views.push_back(loadImageButton);
 
-        checkBoxBMP4Button->setSize(150, 50);
-        checkBoxBMP4Button->setPosition(150, 500);
-        checkBoxBMP4Button->setText("BMP 4bit");
+        saveBMPButton->setSize(50, 50);
+        saveBMPButton->setPosition(150, 500);
+        saveBMPButton->setText("BMP:");
+        saveBMPButton->setTextColor(buttonsTextColor);
+        saveBMPButton->setBackgroundColor(buttonsColor);
+        saveBMPButton->setTextStyle(sf::Text::Style::Bold);
+        saveBMPButton->setTextSize(18);
+        ui.views.push_back(saveBMPButton);
+
+        checkBoxBMP1Button->setSize(50, 50);
+        checkBoxBMP1Button->setPosition(200, 500);
+        checkBoxBMP1Button->setText("1bit");
+        checkBoxBMP1Button->setTextColor(buttonsTextColor);
+        checkBoxBMP1Button->setBackgroundColor(buttonsColor);
+        checkBoxBMP1Button->setTextStyle(sf::Text::Style::Bold);
+        checkBoxBMP1Button->setTextSize(18);
+        checkBoxBMP1Button->setOnClickListener([this](View *v, MouseEvent event) {
+            checkBoxBMP1Button->setCheckedState(!checkBoxBMP1Button->getCheckedState());
+        });
+        ui.views.push_back(checkBoxBMP1Button);
+
+        checkBoxBMP2Button->setSize(50, 50);
+        checkBoxBMP2Button->setPosition(250, 500);
+        checkBoxBMP2Button->setText("2bit");
+        checkBoxBMP2Button->setTextColor(buttonsTextColor);
+        checkBoxBMP2Button->setBackgroundColor(buttonsColor);
+        checkBoxBMP2Button->setTextStyle(sf::Text::Style::Bold);
+        checkBoxBMP2Button->setTextSize(18);
+        checkBoxBMP2Button->setOnClickListener([this](View *v, MouseEvent event) {
+            checkBoxBMP2Button->setCheckedState(!checkBoxBMP2Button->getCheckedState());
+        });
+        ui.views.push_back(checkBoxBMP2Button);
+
+        checkBoxBMP4Button->setSize(50, 50);
+        checkBoxBMP4Button->setPosition(300, 500);
+        checkBoxBMP4Button->setText("4bit");
         checkBoxBMP4Button->setTextColor(buttonsTextColor);
         checkBoxBMP4Button->setBackgroundColor(buttonsColor);
         checkBoxBMP4Button->setTextStyle(sf::Text::Style::Bold);
@@ -265,9 +299,9 @@ public:
         });
         ui.views.push_back(checkBoxBMP4Button);
 
-        checkBoxBMP8Button->setSize(150, 50);
-        checkBoxBMP8Button->setPosition(300, 500);
-        checkBoxBMP8Button->setText("BMP 8bit");
+        checkBoxBMP8Button->setSize(50, 50);
+        checkBoxBMP8Button->setPosition(350, 500);
+        checkBoxBMP8Button->setText("8bit");
         checkBoxBMP8Button->setTextColor(buttonsTextColor);
         checkBoxBMP8Button->setBackgroundColor(buttonsColor);
         checkBoxBMP8Button->setTextStyle(sf::Text::Style::Bold);
@@ -277,9 +311,9 @@ public:
         });
         ui.views.push_back(checkBoxBMP8Button);
 
-        checkBoxBMP24Button->setSize(150, 50);
-        checkBoxBMP24Button->setPosition(450, 500);
-        checkBoxBMP24Button->setText("BMP 24bit");
+        checkBoxBMP24Button->setSize(50, 50);
+        checkBoxBMP24Button->setPosition(400, 500);
+        checkBoxBMP24Button->setText("24bit");
         checkBoxBMP24Button->setTextColor(buttonsTextColor);
         checkBoxBMP24Button->setBackgroundColor(buttonsColor);
         checkBoxBMP24Button->setTextStyle(sf::Text::Style::Bold);
@@ -289,9 +323,42 @@ public:
         });
         ui.views.push_back(checkBoxBMP24Button);
 
-        checkBoxPCX4Button->setSize(150, 50);
-        checkBoxPCX4Button->setPosition(150, 550);
-        checkBoxPCX4Button->setText("PCX 4bit");
+        savePCXButton->setSize(50, 50);
+        savePCXButton->setPosition(150, 550);
+        savePCXButton->setText("PCX:");
+        savePCXButton->setTextColor(buttonsTextColor);
+        savePCXButton->setBackgroundColor(buttonsColor);
+        savePCXButton->setTextStyle(sf::Text::Style::Bold);
+        savePCXButton->setTextSize(18);
+        ui.views.push_back(savePCXButton);
+
+        checkBoxPCX1Button->setSize(50, 50);
+        checkBoxPCX1Button->setPosition(200, 550);
+        checkBoxPCX1Button->setText("1bit");
+        checkBoxPCX1Button->setTextColor(buttonsTextColor);
+        checkBoxPCX1Button->setBackgroundColor(buttonsColor);
+        checkBoxPCX1Button->setTextStyle(sf::Text::Style::Bold);
+        checkBoxPCX1Button->setTextSize(18);
+        checkBoxPCX1Button->setOnClickListener([this](View *v, MouseEvent event) {
+            checkBoxPCX1Button->setCheckedState(!checkBoxPCX1Button->getCheckedState());
+        });
+        ui.views.push_back(checkBoxPCX1Button);
+
+        checkBoxPCX2Button->setSize(50, 50);
+        checkBoxPCX2Button->setPosition(250, 550);
+        checkBoxPCX2Button->setText("2bit");
+        checkBoxPCX2Button->setTextColor(buttonsTextColor);
+        checkBoxPCX2Button->setBackgroundColor(buttonsColor);
+        checkBoxPCX2Button->setTextStyle(sf::Text::Style::Bold);
+        checkBoxPCX2Button->setTextSize(18);
+        checkBoxPCX2Button->setOnClickListener([this](View *v, MouseEvent event) {
+            checkBoxPCX2Button->setCheckedState(!checkBoxPCX2Button->getCheckedState());
+        });
+        ui.views.push_back(checkBoxPCX2Button);
+
+        checkBoxPCX4Button->setSize(50, 50);
+        checkBoxPCX4Button->setPosition(300, 550);
+        checkBoxPCX4Button->setText("4bit");
         checkBoxPCX4Button->setTextColor(buttonsTextColor);
         checkBoxPCX4Button->setBackgroundColor(buttonsColor);
         checkBoxPCX4Button->setTextStyle(sf::Text::Style::Bold);
@@ -301,9 +368,9 @@ public:
         });
         ui.views.push_back(checkBoxPCX4Button);
 
-        checkBoxPCX8Button->setSize(150, 50);
-        checkBoxPCX8Button->setPosition(300, 550);
-        checkBoxPCX8Button->setText("PCX 8bit");
+        checkBoxPCX8Button->setSize(50, 50);
+        checkBoxPCX8Button->setPosition(350, 550);
+        checkBoxPCX8Button->setText("8bit");
         checkBoxPCX8Button->setTextColor(buttonsTextColor);
         checkBoxPCX8Button->setBackgroundColor(buttonsColor);
         checkBoxPCX8Button->setTextStyle(sf::Text::Style::Bold);
@@ -313,9 +380,9 @@ public:
         });
         ui.views.push_back(checkBoxPCX8Button);
 
-        checkBoxPCX24Button->setSize(150, 50);
-        checkBoxPCX24Button->setPosition(450, 550);
-        checkBoxPCX24Button->setText("PCX 24bit");
+        checkBoxPCX24Button->setSize(50, 50);
+        checkBoxPCX24Button->setPosition(400, 550);
+        checkBoxPCX24Button->setText("24bit");
         checkBoxPCX24Button->setTextColor(buttonsTextColor);
         checkBoxPCX24Button->setBackgroundColor(buttonsColor);
         checkBoxPCX24Button->setTextStyle(sf::Text::Style::Bold);
@@ -399,12 +466,62 @@ public:
         ui.views.push_back(uiVisibilityButton);
     }
 
+    void saveToSelectedFormats() {
+        ImageFormat imageFormat;
+        imageFormat.type = FormatType::BMP;
+        if (checkBoxBMP1Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR1BIT;
+            saveImage("result1bit.bmp", imageFormat);
+        }
+        if (checkBoxBMP2Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR2BIT;
+            saveImage("result2bit.bmp", imageFormat);
+        }
+        if (checkBoxBMP4Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR4BIT;
+            saveImage("result4bit.bmp", imageFormat);
+        }
+        if (checkBoxBMP8Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR8BIT;
+            saveImage("result8bit.bmp", imageFormat);
+        }
+        if (checkBoxBMP24Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR24BIT;
+            saveImage("result24bit.bmp", imageFormat);
+        }
+
+        imageFormat.type = FormatType::PCX;
+        if (checkBoxPCX1Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR1BIT;
+            saveImage("result1bit.pcx", imageFormat);
+        }
+        if (checkBoxPCX2Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR2BIT;
+            saveImage("result2bit.pcx", imageFormat);
+        }
+        if (checkBoxPCX4Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR4BIT;
+            saveImage("result4bit.pcx", imageFormat);
+        }
+        if (checkBoxPCX8Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR8BIT;
+            saveImage("result8bit.pcx", imageFormat);
+        }
+        if (checkBoxPCX24Button->getCheckedState()) {
+            imageFormat.colorDepth = ColorDepth::COLOR24BIT;
+            saveImage("result24bit.pcx", imageFormat);
+        }
+    }
+
     void loadImage(string fileName) {
         string filePath = currentDir + imageDir + fileName;
-        ImageBMP image;
-        image.readFromFile(filePath);
-        currentImageBitmap = image.toBitmap();
-        imageView->setImage(currentImageBitmap);
+        auto imageFormat = ImageFormat::getFormatByFilename(fileName);
+        ImageFile *image = Image::createFileObject(imageFormat);
+        if (image != nullptr) {
+            image->readFromFile(filePath);
+            currentImageBitmap = image->toBitmap();
+            imageView->setImage(currentImageBitmap);
+        }
     }
 
     void loadPCXImage(string fileName) {
@@ -457,7 +574,11 @@ public:
         CoderData data;
         data.readFromFile(currentDir + imageDir + fileName);
         BitmapCoder::encodeTo(currentImageBitmap, data);
-        saveImage("encoded.bmp", BMPType::COLOR24BIT);
+        ImageFormat imageFormat;
+        imageFormat.type = FormatType::BMP;
+        imageFormat.colorDepth = ColorDepth::COLOR24BIT;
+        ImageBMP image;
+        image.writeToFile(currentDir + imageDir + "encoded.bmp", imageFormat);
     }
 
     void decodeToFile(string fileName) {
@@ -465,11 +586,13 @@ public:
         data.writeToFile(currentDir + imageDir + fileName);
     }
 
-    void saveImage(string fileName, BMPType type) {
-        string filePath = currentDir + imageDir + fileName;
-        ImageBMP image;
-        image.fromBitmap(currentImageBitmap);
-        image.writeToFile(filePath, type);
+    void saveImage(string fileName, ImageFormat imageFormat) {
+        ImageFile *image = Image::createFileObject(imageFormat);
+        if (image != nullptr) {
+            string filePath = currentDir + imageDir + fileName;
+            image->fromBitmap(currentImageBitmap);
+            image->writeToFile(filePath, imageFormat);
+        }
     }
 
     void showUI(bool uiEnabled) {
@@ -490,9 +613,15 @@ public:
         encodeDataButton->setVisible(uiEnabled);
         decodeDataButton->setVisible(uiEnabled);
 
+        saveBMPButton->setVisible(uiEnabled);
+        savePCXButton->setVisible(uiEnabled);
+        checkBoxBMP1Button->setVisible(uiEnabled);
+        checkBoxBMP2Button->setVisible(uiEnabled);
         checkBoxBMP4Button->setVisible(uiEnabled);
         checkBoxBMP8Button->setVisible(uiEnabled);
         checkBoxBMP24Button->setVisible(uiEnabled);
+        checkBoxPCX1Button->setVisible(uiEnabled);
+        checkBoxPCX2Button->setVisible(uiEnabled);;
         checkBoxPCX4Button->setVisible(uiEnabled);
         checkBoxPCX8Button->setVisible(uiEnabled);
         checkBoxPCX24Button->setVisible(uiEnabled);

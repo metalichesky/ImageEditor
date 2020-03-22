@@ -17,6 +17,11 @@ const int8_t ImagePCX::PCX_ENCODING_RLE = 1; //simple byte-wise run-length encod
 
 const int8_t ImagePCX::PCX_RESERVED1 = 0; //default reserved value
 
-const int8_t ImagePCX::PCX_PALETTE_TYPE0 = 0; //ignoring
-const int8_t ImagePCX::PCX_PALETTE_TYPE1 = 1; //color, monochrome
-const int8_t ImagePCX::PCX_PALETTE_TYPE2 = 2; //grey-scaled
+const int16_t ImagePCX::PCX_PALETTE_TYPE0 = 0; //ignoring
+const int16_t ImagePCX::PCX_PALETTE_TYPE1 = 1; //color, monochrome
+const int16_t ImagePCX::PCX_PALETTE_TYPE2 = 2; //grey-scaled
+
+const int16_t ImagePCX::PCX_DPI_DEFAULT = 72;
+
+const int16_t ImagePCX::PCX_HORIZONTAL_SCREEN_DEFAULT = 0;
+const int16_t ImagePCX::PCX_VERTICAL_SCREEN_DEFAULT = 0;
