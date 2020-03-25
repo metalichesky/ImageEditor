@@ -81,11 +81,8 @@ public:
                 uint8_t component = bitmap->getPixel(i)->getComponent(j);
                 component = (currentBit != 0) ? (component | 0b1U) : (component & (~0b1U));
                 bitmap->getPixel(i)->setComponent(j, component);
-                cout << "Write bit " << bitset<8>(currentBit) << " component was " << bitset<8>(component) << " now "
-                     << bitset<8>(bitmap->getPixel(i)->getComponent(j)) << endl;
                 bitsCounter++;
                 if (bitsCounter % 8 == 0) {
-                    cout << "Byte " << bitset<8>(currentByte) << endl;
                     bitsCounter = 0;
                     bytesCounter++;
                     if (bytesCounter >= sizeFieldSize) {

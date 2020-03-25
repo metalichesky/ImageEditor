@@ -151,6 +151,7 @@ protected:
 
     void updateBackground() {
         auto *backgroundTexture = new sf::Texture();
+        if (size.x <= 0 && size.y <= 0) return;
         if (backgroundDrawable == nullptr) {
             sf::Image image;
             image.create(size.x, size.y, backgroundColor);

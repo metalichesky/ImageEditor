@@ -69,6 +69,7 @@ public:
 
     string currentDir = fs::path(fs::current_path()).string();
     string imageDir = "/images/";
+    string resultsDir = "results/";
 
     bool uiVisible = true;
 
@@ -79,11 +80,11 @@ public:
     }
 
     void onCreate() override {
-        string fileName = "wolf24.bmp";
-        loadImage(fileName);
+//        string fileName = "wolf24.bmp";
+//        loadImage(fileName);
 
-        imageView->setBackgroundColor(sf::Color::Black);
         imageView->setSize(width, height);
+        imageView->setBackgroundColor(sf::Color::Black);
         imageView->setPosition(0, 0);
         imageView->setImage(currentImageBitmap);
 //        imageView->setOnScrollListener([this](View *v, MouseEvent event) {
@@ -98,10 +99,10 @@ public:
         });
         ui.views.push_back(imageView);
 
-        logoImageView->setBackgroundColor(sf::Color::Transparent);
         logoImageView->setSize(0, 0);
+        logoImageView->setBackgroundColor(sf::Color::Transparent);
         logoImageView->setPosition(0, 0);
-        logoImageView->setImage(currentImageBitmap);
+        logoImageView->setImage(currentLogoBitmap);
         logoImageView->setDraggable(true);
         logoImageView->setVisible(false);
         ui.views.push_back(logoImageView);
@@ -537,10 +538,10 @@ public:
         ImageBMP image;
         image.readFromFile(filePath);
         currentLogoBitmap = image.toBitmap();
+        logoImageView->setSize(currentLogoBitmap->width, currentLogoBitmap->height);
         logoImageView->setImage(currentLogoBitmap);
         logoImageView->setPosition(width / 2 - currentLogoBitmap->width / 2,
                                    height / 2 - currentLogoBitmap->height / 2);
-        logoImageView->setSize(currentLogoBitmap->width, currentLogoBitmap->height);
         logoImageView->setImageScale(imageView->getImageScale());
         logoImageView->setVisible(true);
     }
@@ -578,6 +579,7 @@ public:
         imageFormat.type = FormatType::BMP;
         imageFormat.colorDepth = ColorDepth::COLOR24BIT;
         ImageBMP image;
+        image.fromBitmap(currentImageBitmap);
         image.writeToFile(currentDir + imageDir + "encoded.bmp", imageFormat);
     }
 

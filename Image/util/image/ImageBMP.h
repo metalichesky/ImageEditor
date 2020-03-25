@@ -107,7 +107,7 @@ public:
         cout << "--- BMP file header ---" << endl;
         char *bytes = toBytes((void *) fileHeader.bfType);
         cout << "File type: " << bytes << endl;
-        cout << "File bounds: " << fileHeader.bfSize << " Bytes or " << fileHeader.bfSize / 20 << endl;
+        cout << "File bounds: " << fileHeader.bfSize << " Byte" << endl;
         cout << "Reserved1: " << (int) fileHeader.bfReserved1 << endl;
         cout << "Reserved2: " << (int) fileHeader.bfReserved2 << endl;
         cout << "Offset: " << (int) fileHeader.bfOffsetBits << endl;
@@ -116,8 +116,8 @@ public:
     void printImageHeader() {
         cout << "--- BMP map info ---" << endl;
         cout << "InfoHeader bounds: " << imageHeader.size << endl;
-        cout << "ImageFile width: " << imageHeader.width << endl;
-        cout << "ImageFile height: " << imageHeader.height << endl;
+        cout << "Image width: " << imageHeader.width << endl;
+        cout << "Image height: " << imageHeader.height << endl;
         cout << "Planes count: " << imageHeader.planesCount << endl;
         cout << "Bits per pixel: " << imageHeader.bitsPerPixel << endl;
         cout << "Compression type: " << imageHeader.compressionType << endl;
@@ -133,27 +133,6 @@ public:
         for (int i = 0; i < paletteColorsCount; i++) {
             cout << "r = " << (int) colors[i].red << ", g = " << (int) colors[i].green << ", b = " << (int) colors->blue
                  << endl;
-        }
-    }
-
-    Bitmap *toBitmap() override {
-        auto *bitmap = new Bitmap(imageHeader.width, imageHeader.height);
-        for (int y = 0; y < imageHeader.height; y++) {
-            for (int x = 0; x < imageHeader.width; x++) {
-                int idx = y * imageHeader.width + x;
-                bitmap->setPixel(x, y, pixels[idx]);
-            }
-        }
-        return bitmap;
-    }
-
-    void fromBitmap(Bitmap *bitmap) override {
-        width = bitmap->width;
-        height = bitmap->height;
-        int pixelsCount = width * height;
-        pixels = new Color[pixelsCount];
-        for (int i = 0; i < pixelsCount; i++) {
-            pixels[i] = bitmap->getPixel(i)->copy();
         }
     }
 

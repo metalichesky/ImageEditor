@@ -710,10 +710,6 @@ SFML/Graphics/RenderWindow.hpp
 MouseEvent.h
 /home/dmitriy/University/ImageEditor/Image/util/events/MouseEvent.h
 
-/home/dmitriy/University/ImageEditor/Image/util/image/Image.cpp
-Image.h
-/home/dmitriy/University/ImageEditor/Image/util/image/Image.h
-
 /home/dmitriy/University/ImageEditor/Image/util/image/Image.h
 ImageFile.h
 /home/dmitriy/University/ImageEditor/Image/util/image/ImageFile.h
@@ -721,10 +717,6 @@ ImageFormat.h
 /home/dmitriy/University/ImageEditor/Image/util/image/ImageFormat.h
 ImagePCX.h
 /home/dmitriy/University/ImageEditor/Image/util/image/ImagePCX.h
-ImageBMP.h
-/home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.h
-
-/home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.cpp
 ImageBMP.h
 /home/dmitriy/University/ImageEditor/Image/util/image/ImageBMP.h
 

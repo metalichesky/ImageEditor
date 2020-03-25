@@ -24,11 +24,12 @@ public:
     void setImage(Bitmap *newBitmap) {
         if (newBitmap != nullptr) {
             setImage(newBitmap->toSFMLImage());
-        } else {
-            sf::Image image;
-            image.create(0,0);
-            setImage(image);
         }
+//        else {
+//            sf::Image image;
+//            image.create(0,0);
+//            setImage(image);
+//        }
     }
 
     void setImage(sf::Image newImage) {
